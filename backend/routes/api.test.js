@@ -6,7 +6,10 @@ describe('api', () => {
 
   it('returns pagination info and list of images', async done => {
     const response = await request.get('/api/search?query=kittens');
-    expect(response.body.total).toEqual(expect.any(Number));
+    expect(response.body.total).toBeGreaterThan(0);
+    expect(response.body.total_pages).toBeGreaterThan(0);
+    expect(response.body.results).toEqual(expect.any(Array));
+    expect(response.body.results[0].urls).toEqual(expect.any(Object));
     done();
   });
 

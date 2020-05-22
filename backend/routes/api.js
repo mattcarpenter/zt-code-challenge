@@ -15,12 +15,14 @@ router.get('/search', [
     return res.status(400).json(errors);
   }
 
-  const query = req.query.query;
-  const page = req.query.page;
-  const perPage = req.query.perPage;
-
   try {
-    const results = await unsplashService.search(query, config.getUnsplashAccessKey(), page, perPage);
+    const results = await unsplashService.search(
+      req.query.query,
+      config.getUnsplashAccessKey(),
+      req.query.page,
+      req.query.perPage
+    );
+
     res.send(results);
   } catch (e) {
     next(e);

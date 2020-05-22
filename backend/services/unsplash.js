@@ -11,7 +11,8 @@ async function search(query, accessKey, page = 1, perPage = 10) {
     page: page,
     per_page: perPage
   });
+
   const config = { headers: { Authorization: `Client-ID ${accessKey}` } };
-  const { data } = await axios.get(`https://api.unsplash.com/search/photos?${qs}`, config); // TODO - Move Unsplash API base url into configuration file
+  const { data } = await axios.get(`https://api.unsplash.com/search/photos?${qs}`, config);
   return data;
 }
