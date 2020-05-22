@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const unsplashService = require('../services/unsplash');
+const config = require('../config');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/search', async (req, res) => {
+  const results = await unsplashService.search('kittens', config.getUnsplashAccessKey());
+  res.send(results);
 });
 
 module.exports = router;
