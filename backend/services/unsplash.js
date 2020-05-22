@@ -5,7 +5,7 @@ module.exports = {
   search: search
 };
 
-async function search(query, accessKey, page = 10, perPage = 10) {
+async function search(query, accessKey, page = 1, perPage = 10) {
   const qs = querystring.stringify({
     query: query,
     page: page,

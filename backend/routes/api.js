@@ -10,7 +10,6 @@ router.get('/search', [
   check('perPage').optional().isInt({ gt: 0 }).toInt()
 ], async (req, res) => {
 
-  // validate request
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json(errors);
@@ -20,9 +19,12 @@ router.get('/search', [
   const page = req.query.page;
   const perPage = req.query.perPage;
 
-  // perform search and respond with result
-  const results = await unsplashService.search(query, config.getUnsplashAccessKey(), page, perPage);
-  res.send(results);
+  try {
+    const results = await unsplashService.search(query, config.getUnsplashAccessKey(), page, perPage);
+    res.send(results);
+  } catch (e) {
+    next(e);
+  }
 });
 
 module.exports = router;
