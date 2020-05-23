@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoTile properly renders 1`] = `
+<SizeMe(PhotoTile)
+  id="abc"
+  originalHeight={1500}
+  originalWidth={2000}
+  size={
+    Object {
+      "width": 200,
+    }
+  }
+  thumbnailURL="http://fake.com/image.jpg"
+>
+  <SizeMeRenderer(PhotoTile)
+    disablePlaceholder={false}
+    explicitRef={[Function]}
+    id="abc"
+    originalHeight={1500}
+    originalWidth={2000}
+    size={
+      Object {
+        "width": 200,
+      }
+    }
+    thumbnailURL="http://fake.com/image.jpg"
+  >
+    <SizeMeReferenceWrapper>
+      <PhotoTile
+        id="abc"
+        originalHeight={1500}
+        originalWidth={2000}
+        size={
+          Object {
+            "width": 200,
+          }
+        }
+        thumbnailURL="http://fake.com/image.jpg"
+      >
+        <div
+          style={
+            Object {
+              "height": 150,
+            }
+          }
+        >
+          <img
+            height={150}
+            src="http://fake.com/image.jpg"
+            width={200}
+          />
+        </div>
+      </PhotoTile>
+    </SizeMeReferenceWrapper>
+  </SizeMeRenderer(PhotoTile)>
+</SizeMe(PhotoTile)>
+`;

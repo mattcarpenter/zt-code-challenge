@@ -1,12 +1,12 @@
 import React from 'react';
-import sizeMe from 'react-sizeme';
 import PropTypes from 'prop-types';
+import { withSize } from 'react-sizeme';
 
 const PhotoTile = ({profileURL, thumbnailURL, originalURL, profileImage, uploaderName, id, originalWidth, originalHeight, canFavorite, size }) => {
   const scaledHeight = calculateScaledHeight(originalWidth, originalHeight, size.width);
 
   return (
-    <div>
+    <div style={{ height: scaledHeight }}>
       <img src={thumbnailURL} width={size.width} height={scaledHeight}/>
     </div>
   );
@@ -24,7 +24,7 @@ PhotoTile.propTypes = {
   canFavorite: PropTypes.bool
 };
 
-export default sizeMe()(PhotoTile);
+export default withSize()(PhotoTile);
 
 export const calculateScaledHeight = (originalWidth, originalHeight, newWidth) => {
   return originalHeight * newWidth / originalWidth;

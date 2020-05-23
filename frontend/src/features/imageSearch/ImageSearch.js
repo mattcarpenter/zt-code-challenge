@@ -11,7 +11,7 @@ export default function ImageSearch() {
 
   function loadMoreItems() {
     console.log('load more images');
-    //dispatch(loadMoreImages());
+    dispatch(loadMoreImages());
   }
 
   function handleSearch(query) {
