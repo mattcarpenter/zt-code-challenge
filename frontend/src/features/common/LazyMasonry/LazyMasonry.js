@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   }
 });
 
-const LazyStackGrid = ({children, cols, loadMoreItems}) => {
+const LazyMasonry = ({children, cols, loadMoreItems}) => {
   const classes = useStyles();
   return (
     <div>
@@ -29,10 +29,10 @@ const LazyStackGrid = ({children, cols, loadMoreItems}) => {
   );
 };
 
-LazyStackGrid.propTypes = {
+LazyMasonry.propTypes = {
   children: PropTypes.arrayOf(PropTypes.node),
   cols: PropTypes.number,
   loadMoreItems: PropTypes.func
 };
 
-export default LazyStackGrid;
+export default LazyMasonry;

@@ -1,16 +1,16 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import LazyStackGrid from './index';
+import LazyMasonry from './LazyMasonry';
 
-describe('LazyStackGrid', () => {
+describe('LazyMasonry', () => {
 
   it('places children into columns', () => {
     let items = makeGridItems(4);
 
     const wrapper = mount(
-      <LazyStackGrid style={{width: 200, height: 200}}>
+      <LazyMasonry style={{width: 200, height: 200}}>
         {items}
-      </LazyStackGrid>
+      </LazyMasonry>
     );
 
     expect(wrapper.find('#child-0 + #child-2').length).toBe(1);

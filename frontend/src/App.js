@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageSearch from './features/imageSearch';
+import ImageSearch from './features/imageSearch/ImageSearch';
 import './App.css';
 
 function App() {

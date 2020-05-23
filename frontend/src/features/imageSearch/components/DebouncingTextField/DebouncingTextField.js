@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 const DebouncingTextField = ({label, value, debounceTime, onChange, placeholder}) => {
 
-  const handleChange = debounce((value) => {
+  const handleChange = debounceEvent((value) => {
     onChange(value);
-  }, 250);
+  }, debounceTime);
 
   return (
     <TextField
@@ -16,6 +16,7 @@ const DebouncingTextField = ({label, value, debounceTime, onChange, placeholder}
       value={value}
       onChange={handleChange}
       placeholder={placeholder}
+      fullWidth={true}
     />
   );
 };
@@ -32,7 +33,7 @@ DebouncingTextField.defaultProps = {
   onChange: () => {}
 };
 
-export const debounce = (callback, time, interval) => {
+export const debounceEvent = (callback, time, interval) => {
   return (event) => {
     const value = event.target.value;
     clearTimeout(interval, interval = setTimeout(() => callback(value), time));

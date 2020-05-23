@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import DebouncingTextField from './index';
+import DebouncingTextField from './DebouncingTextField';
 
 describe('debouncingTextBox', () => {
 

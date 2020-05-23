@@ -3,6 +3,7 @@ const { check, validationResult } = require('express-validator');
 const router = express.Router();
 const unsplashService = require('../services/unsplash');
 const config = require('../config');
+const fs = require('fs');
 
 router.get('/search', [
   check('query').exists(),
@@ -27,6 +28,11 @@ router.get('/search', [
   } catch (e) {
     next(e);
   }
+});
+
+router.get('/mock', (req, res) => {
+  const mockResponse = JSON.parse(fs.readFileSync(__dirname + '/kittens.json').toString());
+  res.send(mockResponse);
 });
 
 module.exports = router;
