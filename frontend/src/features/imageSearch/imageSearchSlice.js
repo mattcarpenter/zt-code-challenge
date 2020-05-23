@@ -3,10 +3,9 @@ import axios from 'axios';
 
 export const initialState = {
   images: [],
-  page: null,
+  page: 1,
   total: null,
-  totalPages: null,
-  query: null
+  totalPages: null
 };
 
 export const searchImages = createAsyncThunk(
@@ -26,13 +25,13 @@ export const imageSearchSlice = createSlice({
     [searchImages.fulfilled]: (state, action) => {
       state.total = action.payload.total;
       state.totalPages = action.payload.total_pages;
+      state.page = action.payload.page;
 
-      if (action.payload.query === state.query) {
-        // same query; append images
+      if (action.payload.page > 1) {
+        // append images
         state.images = state.images.concat(action.payload.results);
       } else {
-        // new query; replace images
-        state.query = action.payload.query;
+        // replace images
         state.images = action.payload.results;
       }
     }
@@ -40,5 +39,6 @@ export const imageSearchSlice = createSlice({
 });
 
 export const selectImages = state => state.images;
+export const selectPage = state => state.page;
 
 export default imageSearchSlice.reducer;

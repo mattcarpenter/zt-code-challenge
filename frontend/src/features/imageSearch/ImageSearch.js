@@ -12,9 +12,7 @@ export default function ImageSearch() {
   }
 
   function handleSearch(query) {
-    dispatch(searchImages({
-      query: query
-    }));
+    dispatch(searchImages({ query, page: 1, perPage: 10 }));
   }
 
   return (

@@ -36,22 +36,24 @@ describe('imageSearch slice', () => {
     expect(actions[1].payload).toStrictEqual({ ...mockAxiosResponse.response, query: 'kittens', page: 1 });
   });
 
-  it('properly adds images and pagination information when images searches succeed', () => {
+  it('properly adds (or replaces) images and pagination information when image searches succeed', () => {
     const mockAxiosResponse = createMockImageSearchResponse(100, 2, 50);
-    const state2 = reducer(initialState, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens'}));
+    const state2 = reducer(initialState, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens', page: 1}));
     expect(state2.images).toEqual(mockAxiosResponse.response.results);
+    expect(state2.page).toBe(1);
     expect(state2.total).toEqual(mockAxiosResponse.response.total);
     expect(state2.totalPages).toEqual(mockAxiosResponse.response.total_pages);
 
     // simulate another search with the same query; expect new results to be added to previous results
-    const state3 = reducer(state2, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens'}));
+    const state3 = reducer(state2, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens', page: 2}));
     expect(state3.images.length).toBe(100);
+    expect(state3.page).toBe(2);
 
     // simulate another search with a different query; expect the new results to replace the previous results
     const mockAxiosResponse2 = createMockImageSearchResponse(75, 1, 75);
-    const state4 = reducer(state3, searchImages.fulfilled({ ...mockAxiosResponse2.response, query: 'puppies'}));
+    const state4 = reducer(state3, searchImages.fulfilled({ ...mockAxiosResponse2.response, query: 'puppies', page: 1}));
     expect(state4.images.length).toBe(75);
-    expect(state4.query).toBe('puppies');
+    expect(state4.page).toBe(1);
   });
 
 });
@@ -62,7 +64,7 @@ function createMockImageSearchResponse(total, totalPages, itemCount) {
     response: {
       total: total,
       total_pages: totalPages,
-      results: [...Array(itemCount).keys()].map(k => {})
+      results: [...Array(itemCount).keys()].map(() => {})
     }
   };
 }
