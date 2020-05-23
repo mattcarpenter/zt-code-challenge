@@ -30,7 +30,10 @@ const LazyMasonry = ({children, cols, loadMoreItems}) => {
 };
 
 LazyMasonry.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
   cols: PropTypes.number,
   loadMoreItems: PropTypes.func
 };

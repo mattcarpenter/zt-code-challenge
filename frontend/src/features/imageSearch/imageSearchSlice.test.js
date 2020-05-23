@@ -1,4 +1,4 @@
-import reducer, {searchImages, initialState} from './imageSearchSlice';
+import reducer, {searchImages, loadMoreImages, initialState} from './imageSearchSlice';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import moxios from 'moxios';
@@ -24,6 +24,12 @@ describe('imageSearch slice', () => {
     expect(result).toEqual(nextState);
   });
 
+  it('rejects when attempting to load more images before a search has been performed', async () => {
+    await store.dispatch(loadMoreImages());
+    const actions = store.getActions();
+    expect(actions[0].type).toBe(loadMoreImages.rejected.type);
+  });
+
   it('dispatches the correct actions after a successful image search', async () => {
     const mockAxiosResponse = createMockImageSearchResponse(100, 2, 50);
     moxios.stubRequest(/.*/, mockAxiosResponse);
@@ -33,27 +39,31 @@ describe('imageSearch slice', () => {
 
     expect(actions[0].type).toBe(searchImages.pending.type);
     expect(actions[1].type).toBe(searchImages.fulfilled.type);
-    expect(actions[1].payload).toStrictEqual({ ...mockAxiosResponse.response, query: 'kittens', page: 1 });
+    expect(actions[1].payload).toStrictEqual({ ...mockAxiosResponse.response, query: 'kittens' });
   });
 
-  it('properly adds (or replaces) images and pagination information when image searches succeed', () => {
+  xit('dispatches the correct actions after successfully loading more images', async () => {
+
+  });
+
+  it('properly sets images and pagination information when an image search succeeds', () => {
     const mockAxiosResponse = createMockImageSearchResponse(100, 2, 50);
-    const state2 = reducer(initialState, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens', page: 1}));
+    const state2 = reducer(initialState, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens' }));
     expect(state2.images).toEqual(mockAxiosResponse.response.results);
     expect(state2.page).toBe(1);
     expect(state2.total).toEqual(mockAxiosResponse.response.total);
     expect(state2.totalPages).toEqual(mockAxiosResponse.response.total_pages);
+  });
 
-    // simulate another search with the same query; expect new results to be added to previous results
-    const state3 = reducer(state2, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens', page: 2}));
+  it('properly appends images after successfully loading more images', () => {
+    // simulate search
+    const mockAxiosResponse = createMockImageSearchResponse(100, 2, 50);
+    const state2 = reducer(initialState, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens' }));
+    expect(state2.images.length).toBe(50);
+
+    // simulate load more images
+    const state3 = reducer(state2, loadMoreImages.fulfilled({ ...mockAxiosResponse.response, page: 2 }));
     expect(state3.images.length).toBe(100);
-    expect(state3.page).toBe(2);
-
-    // simulate another search with a different query; expect the new results to replace the previous results
-    const mockAxiosResponse2 = createMockImageSearchResponse(75, 1, 75);
-    const state4 = reducer(state3, searchImages.fulfilled({ ...mockAxiosResponse2.response, query: 'puppies', page: 1}));
-    expect(state4.images.length).toBe(75);
-    expect(state4.page).toBe(1);
   });
 
 });
