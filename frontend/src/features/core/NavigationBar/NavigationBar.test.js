@@ -1,6 +1,5 @@
+import {mount} from 'enzyme';
 import React from 'react';
-
-import { mount } from 'enzyme';
 import NavigationBar from './NavigationBar';
 
 describe('NavigationBar', () => {

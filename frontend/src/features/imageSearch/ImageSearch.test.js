@@ -1,6 +1,6 @@
+import {shallow} from 'enzyme';
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Provider } from 'react-redux';
+import {Provider} from 'react-redux';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import ImageSearch from './ImageSearch';
@@ -20,7 +20,7 @@ describe('imageSearch', () => {
         <ImageSearch/>
       </Provider>
     );
-    
+
     expect(wrapper).toMatchSnapshot();
   });
 

@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { searchImages, selectImages, loadMoreImages, selectLoading, selectQuery } from './imageSearchSlice';
-import { selectCategories, saveToFavorites } from '../favorites/favoritesSlice';
-import LazyMasonry from '../core/LazyMasonry/LazyMasonry';
-import DebouncingInputBox from './components/DebouncingTextField/DebouncingTextField';
-import PhotoTile from '../core/PhotoTile/PhotoTile';
 import Dialog from '@material-ui/core/Dialog';
-import { makeStyles } from '@material-ui/core/styles';
-import AddToFavoritesDialogForm from './components/AddToFavoritesDialogForm/AddToFavoritesDialogForm';
+import {makeStyles} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import React, {useState} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import LazyMasonry from '../core/LazyMasonry/LazyMasonry';
+import PhotoTile from '../core/PhotoTile/PhotoTile';
+import {saveToFavorites, selectCategories} from '../favorites/favoritesSlice';
+import AddToFavoritesDialogForm from './components/AddToFavoritesDialogForm/AddToFavoritesDialogForm';
+import DebouncingInputBox from './components/DebouncingTextField/DebouncingTextField';
+import {loadMoreImages, searchImages, selectImages, selectLoading, selectQuery} from './imageSearchSlice';
 
 const useStyles = makeStyles({
   root: {
     minHeight: '100vh',
     position: 'relative',
-    backgroundColor: 'rgb(35, 35, 35)'
+    backgroundColor: 'rgb(35, 35, 35)',
+    marginBottom: 50,
+    paddingBottom: 15
   },
   search: {
     padding: '20px 20px 10px 20px'
@@ -28,16 +30,15 @@ const ImageSearch = ({cols}) => {
   const categories = useSelector(selectCategories);
   const images = useSelector(selectImages);
   const loading = useSelector(selectLoading);
-  const query = useSelector(selectQuery);
   const dispatch = useDispatch();
   const classes = useStyles();
 
   function loadMoreItems() {
-    dispatch(loadMoreImages());
+    dispatch(loadMoreImages({ perPage: 50 }));
   }
 
   function handleSearch(query) {
-    dispatch(searchImages({ query, perPage: 30 }));
+    dispatch(searchImages({ query, perPage: 100 }));
   }
 
   function handleDialogOnSave(categories) {
@@ -57,7 +58,6 @@ const ImageSearch = ({cols}) => {
           placeholder="Start typing to begin a search..."
           onChange={handleSearch}
           className={classes.input}
-          value={query}
         />
       </div>
       <LazyMasonry loadMoreItems={loadMoreItems} cols={cols} loading={loading}>

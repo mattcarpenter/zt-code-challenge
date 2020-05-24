@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormGroup from '@material-ui/core/FormGroup';
+import TextField from '@material-ui/core/TextField';
 import PropTypes from 'prop-types';
+import React, {useState} from 'react';
 
 const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
   const [ selectedCategoryIds, setSelectedCategoryIds ]  = useState({});
@@ -30,25 +30,27 @@ const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
   return (
     <div>
       <DialogTitle id="form-dialog-title">Add to List</DialogTitle>
-      <DialogContent dividers>
-        <DialogContentText>
-          Select one or more lists to add this image to.
-        </DialogContentText>
-        <FormGroup>
-          { categories.map(category => (
-            <FormControlLabel
-              key={category.id}
-              control={
-                <Checkbox
-                  onChange={(e) => handleCheckboxChange(category.id, e.target.checked)}
-                  name={category.name}
-                />
-              }
-              label={category.name}
-            />
-          ))}
-        </FormGroup>
-      </DialogContent>
+      { categories.length > 0 && (
+        <DialogContent dividers>
+          <DialogContentText>
+            Select one or more lists to add this image to.
+          </DialogContentText>
+          <FormGroup>
+            { categories.map(category => (
+              <FormControlLabel
+                key={category.id}
+                control={
+                  <Checkbox
+                    onChange={(e) => handleCheckboxChange(category.id, e.target.checked)}
+                    name={category.name}
+                  />
+                }
+                label={category.name}
+              />
+            ))}
+          </FormGroup>
+        </DialogContent>
+      )}
       <DialogContent>
         <DialogContentText>
           Add this photo to a new list by entering a list name and description.

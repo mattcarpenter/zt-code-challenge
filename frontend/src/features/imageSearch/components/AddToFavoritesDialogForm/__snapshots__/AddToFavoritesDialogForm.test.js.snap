@@ -1635,3 +1635,2538 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
   </div>
 </AddToFavoritesDialogForm>
 `;
+
+exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
+<AddToFavoritesDialogForm
+  categories={
+    Array [
+      Object {
+        "id": "a",
+        "name": "a",
+      },
+      Object {
+        "id": "b",
+        "name": "b",
+      },
+    ]
+  }
+  onClose={[Function]}
+  onSave={[Function]}
+>
+  <div>
+    <WithStyles(ForwardRef(DialogTitle))
+      id="form-dialog-title"
+    >
+      <ForwardRef(DialogTitle)
+        classes={
+          Object {
+            "root": "MuiDialogTitle-root",
+          }
+        }
+        id="form-dialog-title"
+      >
+        <div
+          className="MuiDialogTitle-root"
+          id="form-dialog-title"
+        >
+          <WithStyles(ForwardRef(Typography))
+            component="h2"
+            variant="h6"
+          >
+            <ForwardRef(Typography)
+              classes={
+                Object {
+                  "alignCenter": "MuiTypography-alignCenter",
+                  "alignJustify": "MuiTypography-alignJustify",
+                  "alignLeft": "MuiTypography-alignLeft",
+                  "alignRight": "MuiTypography-alignRight",
+                  "body1": "MuiTypography-body1",
+                  "body2": "MuiTypography-body2",
+                  "button": "MuiTypography-button",
+                  "caption": "MuiTypography-caption",
+                  "colorError": "MuiTypography-colorError",
+                  "colorInherit": "MuiTypography-colorInherit",
+                  "colorPrimary": "MuiTypography-colorPrimary",
+                  "colorSecondary": "MuiTypography-colorSecondary",
+                  "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                  "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                  "displayBlock": "MuiTypography-displayBlock",
+                  "displayInline": "MuiTypography-displayInline",
+                  "gutterBottom": "MuiTypography-gutterBottom",
+                  "h1": "MuiTypography-h1",
+                  "h2": "MuiTypography-h2",
+                  "h3": "MuiTypography-h3",
+                  "h4": "MuiTypography-h4",
+                  "h5": "MuiTypography-h5",
+                  "h6": "MuiTypography-h6",
+                  "noWrap": "MuiTypography-noWrap",
+                  "overline": "MuiTypography-overline",
+                  "paragraph": "MuiTypography-paragraph",
+                  "root": "MuiTypography-root",
+                  "srOnly": "MuiTypography-srOnly",
+                  "subtitle1": "MuiTypography-subtitle1",
+                  "subtitle2": "MuiTypography-subtitle2",
+                }
+              }
+              component="h2"
+              variant="h6"
+            >
+              <h2
+                className="MuiTypography-root MuiTypography-h6"
+              >
+                Add to List
+              </h2>
+            </ForwardRef(Typography)>
+          </WithStyles(ForwardRef(Typography))>
+        </div>
+      </ForwardRef(DialogTitle)>
+    </WithStyles(ForwardRef(DialogTitle))>
+    <WithStyles(ForwardRef(DialogContent))
+      dividers={true}
+    >
+      <ForwardRef(DialogContent)
+        classes={
+          Object {
+            "dividers": "MuiDialogContent-dividers",
+            "root": "MuiDialogContent-root",
+          }
+        }
+        dividers={true}
+      >
+        <div
+          className="MuiDialogContent-root MuiDialogContent-dividers"
+        >
+          <WithStyles(ForwardRef(DialogContentText))>
+            <ForwardRef(DialogContentText)
+              classes={
+                Object {
+                  "root": "MuiDialogContentText-root",
+                }
+              }
+            >
+              <WithStyles(ForwardRef(Typography))
+                classes={
+                  Object {
+                    "root": "MuiDialogContentText-root",
+                  }
+                }
+                color="textSecondary"
+                component="p"
+                variant="body1"
+              >
+                <ForwardRef(Typography)
+                  classes={
+                    Object {
+                      "alignCenter": "MuiTypography-alignCenter",
+                      "alignJustify": "MuiTypography-alignJustify",
+                      "alignLeft": "MuiTypography-alignLeft",
+                      "alignRight": "MuiTypography-alignRight",
+                      "body1": "MuiTypography-body1",
+                      "body2": "MuiTypography-body2",
+                      "button": "MuiTypography-button",
+                      "caption": "MuiTypography-caption",
+                      "colorError": "MuiTypography-colorError",
+                      "colorInherit": "MuiTypography-colorInherit",
+                      "colorPrimary": "MuiTypography-colorPrimary",
+                      "colorSecondary": "MuiTypography-colorSecondary",
+                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                      "displayBlock": "MuiTypography-displayBlock",
+                      "displayInline": "MuiTypography-displayInline",
+                      "gutterBottom": "MuiTypography-gutterBottom",
+                      "h1": "MuiTypography-h1",
+                      "h2": "MuiTypography-h2",
+                      "h3": "MuiTypography-h3",
+                      "h4": "MuiTypography-h4",
+                      "h5": "MuiTypography-h5",
+                      "h6": "MuiTypography-h6",
+                      "noWrap": "MuiTypography-noWrap",
+                      "overline": "MuiTypography-overline",
+                      "paragraph": "MuiTypography-paragraph",
+                      "root": "MuiTypography-root MuiDialogContentText-root",
+                      "srOnly": "MuiTypography-srOnly",
+                      "subtitle1": "MuiTypography-subtitle1",
+                      "subtitle2": "MuiTypography-subtitle2",
+                    }
+                  }
+                  color="textSecondary"
+                  component="p"
+                  variant="body1"
+                >
+                  <p
+                    className="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+                  >
+                    Select one or more lists to add this image to.
+                  </p>
+                </ForwardRef(Typography)>
+              </WithStyles(ForwardRef(Typography))>
+            </ForwardRef(DialogContentText)>
+          </WithStyles(ForwardRef(DialogContentText))>
+          <WithStyles(ForwardRef(FormGroup))>
+            <ForwardRef(FormGroup)
+              classes={
+                Object {
+                  "root": "MuiFormGroup-root",
+                  "row": "MuiFormGroup-row",
+                }
+              }
+            >
+              <div
+                className="MuiFormGroup-root"
+              >
+                <WithStyles(ForwardRef(FormControlLabel))
+                  control={
+                    <ForwardRef(WithStyles)
+                      name="a"
+                      onChange={[Function]}
+                    />
+                  }
+                  key="a"
+                  label="a"
+                >
+                  <ForwardRef(FormControlLabel)
+                    classes={
+                      Object {
+                        "disabled": "Mui-disabled",
+                        "label": "MuiFormControlLabel-label",
+                        "labelPlacementBottom": "MuiFormControlLabel-labelPlacementBottom",
+                        "labelPlacementStart": "MuiFormControlLabel-labelPlacementStart",
+                        "labelPlacementTop": "MuiFormControlLabel-labelPlacementTop",
+                        "root": "MuiFormControlLabel-root",
+                      }
+                    }
+                    control={
+                      <ForwardRef(WithStyles)
+                        name="a"
+                        onChange={[Function]}
+                      />
+                    }
+                    label="a"
+                  >
+                    <label
+                      className="MuiFormControlLabel-root"
+                    >
+                      <WithStyles(ForwardRef(Checkbox))
+                        name="a"
+                        onChange={[Function]}
+                      >
+                        <ForwardRef(Checkbox)
+                          classes={
+                            Object {
+                              "checked": "Mui-checked",
+                              "colorPrimary": "MuiCheckbox-colorPrimary",
+                              "colorSecondary": "MuiCheckbox-colorSecondary",
+                              "disabled": "Mui-disabled",
+                              "indeterminate": "MuiCheckbox-indeterminate",
+                              "root": "MuiCheckbox-root",
+                            }
+                          }
+                          name="a"
+                          onChange={[Function]}
+                        >
+                          <WithStyles(ForwardRef(SwitchBase))
+                            checkedIcon={
+                              <UNDEFINED
+                                fontSize="default"
+                              />
+                            }
+                            classes={
+                              Object {
+                                "checked": "Mui-checked",
+                                "disabled": "Mui-disabled",
+                                "root": "MuiCheckbox-root MuiCheckbox-colorSecondary",
+                              }
+                            }
+                            color="secondary"
+                            icon={
+                              <UNDEFINED
+                                fontSize="default"
+                              />
+                            }
+                            inputProps={
+                              Object {
+                                "data-indeterminate": false,
+                              }
+                            }
+                            name="a"
+                            onChange={[Function]}
+                            type="checkbox"
+                          >
+                            <ForwardRef(SwitchBase)
+                              checkedIcon={
+                                <UNDEFINED
+                                  fontSize="default"
+                                />
+                              }
+                              classes={
+                                Object {
+                                  "checked": "PrivateSwitchBase-checked-151 Mui-checked",
+                                  "disabled": "PrivateSwitchBase-disabled-152 Mui-disabled",
+                                  "input": "PrivateSwitchBase-input-153",
+                                  "root": "PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary",
+                                }
+                              }
+                              color="secondary"
+                              icon={
+                                <UNDEFINED
+                                  fontSize="default"
+                                />
+                              }
+                              inputProps={
+                                Object {
+                                  "data-indeterminate": false,
+                                }
+                              }
+                              name="a"
+                              onChange={[Function]}
+                              type="checkbox"
+                            >
+                              <WithStyles(ForwardRef(IconButton))
+                                className="PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary"
+                                color="secondary"
+                                component="span"
+                                onBlur={[Function]}
+                                onFocus={[Function]}
+                                tabIndex={null}
+                              >
+                                <ForwardRef(IconButton)
+                                  className="PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary"
+                                  classes={
+                                    Object {
+                                      "colorInherit": "MuiIconButton-colorInherit",
+                                      "colorPrimary": "MuiIconButton-colorPrimary",
+                                      "colorSecondary": "MuiIconButton-colorSecondary",
+                                      "disabled": "Mui-disabled",
+                                      "edgeEnd": "MuiIconButton-edgeEnd",
+                                      "edgeStart": "MuiIconButton-edgeStart",
+                                      "label": "MuiIconButton-label",
+                                      "root": "MuiIconButton-root",
+                                      "sizeSmall": "MuiIconButton-sizeSmall",
+                                    }
+                                  }
+                                  color="secondary"
+                                  component="span"
+                                  onBlur={[Function]}
+                                  onFocus={[Function]}
+                                  tabIndex={null}
+                                >
+                                  <WithStyles(ForwardRef(ButtonBase))
+                                    centerRipple={true}
+                                    className="MuiIconButton-root PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                                    component="span"
+                                    disabled={false}
+                                    focusRipple={true}
+                                    onBlur={[Function]}
+                                    onFocus={[Function]}
+                                    tabIndex={null}
+                                  >
+                                    <ForwardRef(ButtonBase)
+                                      centerRipple={true}
+                                      className="MuiIconButton-root PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                                      classes={
+                                        Object {
+                                          "disabled": "Mui-disabled",
+                                          "focusVisible": "Mui-focusVisible",
+                                          "root": "MuiButtonBase-root",
+                                        }
+                                      }
+                                      component="span"
+                                      disabled={false}
+                                      focusRipple={true}
+                                      onBlur={[Function]}
+                                      onFocus={[Function]}
+                                      tabIndex={null}
+                                    >
+                                      <span
+                                        aria-disabled={false}
+                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                                        onBlur={[Function]}
+                                        onDragLeave={[Function]}
+                                        onFocus={[Function]}
+                                        onKeyDown={[Function]}
+                                        onKeyUp={[Function]}
+                                        onMouseDown={[Function]}
+                                        onMouseLeave={[Function]}
+                                        onMouseUp={[Function]}
+                                        onTouchEnd={[Function]}
+                                        onTouchMove={[Function]}
+                                        onTouchStart={[Function]}
+                                        tabIndex={null}
+                                      >
+                                        <span
+                                          className="MuiIconButton-label"
+                                        >
+                                          <input
+                                            className="PrivateSwitchBase-input-153"
+                                            data-indeterminate={false}
+                                            name="a"
+                                            onChange={[Function]}
+                                            type="checkbox"
+                                          />
+                                          <ForwardRef
+                                            fontSize="default"
+                                          >
+                                            <WithStyles(ForwardRef(SvgIcon))
+                                              fontSize="default"
+                                            >
+                                              <ForwardRef(SvgIcon)
+                                                classes={
+                                                  Object {
+                                                    "colorAction": "MuiSvgIcon-colorAction",
+                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                    "colorError": "MuiSvgIcon-colorError",
+                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                    "root": "MuiSvgIcon-root",
+                                                  }
+                                                }
+                                                fontSize="default"
+                                              >
+                                                <svg
+                                                  aria-hidden={true}
+                                                  className="MuiSvgIcon-root"
+                                                  focusable="false"
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                                  />
+                                                </svg>
+                                              </ForwardRef(SvgIcon)>
+                                            </WithStyles(ForwardRef(SvgIcon))>
+                                          </ForwardRef>
+                                        </span>
+                                        <WithStyles(memo)
+                                          center={true}
+                                        >
+                                          <ForwardRef(TouchRipple)
+                                            center={true}
+                                            classes={
+                                              Object {
+                                                "child": "MuiTouchRipple-child",
+                                                "childLeaving": "MuiTouchRipple-childLeaving",
+                                                "childPulsate": "MuiTouchRipple-childPulsate",
+                                                "ripple": "MuiTouchRipple-ripple",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                "root": "MuiTouchRipple-root",
+                                              }
+                                            }
+                                          >
+                                            <span
+                                              className="MuiTouchRipple-root"
+                                            >
+                                              <TransitionGroup
+                                                childFactory={[Function]}
+                                                component={null}
+                                                exit={true}
+                                              />
+                                            </span>
+                                          </ForwardRef(TouchRipple)>
+                                        </WithStyles(memo)>
+                                      </span>
+                                    </ForwardRef(ButtonBase)>
+                                  </WithStyles(ForwardRef(ButtonBase))>
+                                </ForwardRef(IconButton)>
+                              </WithStyles(ForwardRef(IconButton))>
+                            </ForwardRef(SwitchBase)>
+                          </WithStyles(ForwardRef(SwitchBase))>
+                        </ForwardRef(Checkbox)>
+                      </WithStyles(ForwardRef(Checkbox))>
+                      <WithStyles(ForwardRef(Typography))
+                        className="MuiFormControlLabel-label"
+                        component="span"
+                      >
+                        <ForwardRef(Typography)
+                          className="MuiFormControlLabel-label"
+                          classes={
+                            Object {
+                              "alignCenter": "MuiTypography-alignCenter",
+                              "alignJustify": "MuiTypography-alignJustify",
+                              "alignLeft": "MuiTypography-alignLeft",
+                              "alignRight": "MuiTypography-alignRight",
+                              "body1": "MuiTypography-body1",
+                              "body2": "MuiTypography-body2",
+                              "button": "MuiTypography-button",
+                              "caption": "MuiTypography-caption",
+                              "colorError": "MuiTypography-colorError",
+                              "colorInherit": "MuiTypography-colorInherit",
+                              "colorPrimary": "MuiTypography-colorPrimary",
+                              "colorSecondary": "MuiTypography-colorSecondary",
+                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                              "displayBlock": "MuiTypography-displayBlock",
+                              "displayInline": "MuiTypography-displayInline",
+                              "gutterBottom": "MuiTypography-gutterBottom",
+                              "h1": "MuiTypography-h1",
+                              "h2": "MuiTypography-h2",
+                              "h3": "MuiTypography-h3",
+                              "h4": "MuiTypography-h4",
+                              "h5": "MuiTypography-h5",
+                              "h6": "MuiTypography-h6",
+                              "noWrap": "MuiTypography-noWrap",
+                              "overline": "MuiTypography-overline",
+                              "paragraph": "MuiTypography-paragraph",
+                              "root": "MuiTypography-root",
+                              "srOnly": "MuiTypography-srOnly",
+                              "subtitle1": "MuiTypography-subtitle1",
+                              "subtitle2": "MuiTypography-subtitle2",
+                            }
+                          }
+                          component="span"
+                        >
+                          <span
+                            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                          >
+                            a
+                          </span>
+                        </ForwardRef(Typography)>
+                      </WithStyles(ForwardRef(Typography))>
+                    </label>
+                  </ForwardRef(FormControlLabel)>
+                </WithStyles(ForwardRef(FormControlLabel))>
+                <WithStyles(ForwardRef(FormControlLabel))
+                  control={
+                    <ForwardRef(WithStyles)
+                      name="b"
+                      onChange={[Function]}
+                    />
+                  }
+                  key="b"
+                  label="b"
+                >
+                  <ForwardRef(FormControlLabel)
+                    classes={
+                      Object {
+                        "disabled": "Mui-disabled",
+                        "label": "MuiFormControlLabel-label",
+                        "labelPlacementBottom": "MuiFormControlLabel-labelPlacementBottom",
+                        "labelPlacementStart": "MuiFormControlLabel-labelPlacementStart",
+                        "labelPlacementTop": "MuiFormControlLabel-labelPlacementTop",
+                        "root": "MuiFormControlLabel-root",
+                      }
+                    }
+                    control={
+                      <ForwardRef(WithStyles)
+                        name="b"
+                        onChange={[Function]}
+                      />
+                    }
+                    label="b"
+                  >
+                    <label
+                      className="MuiFormControlLabel-root"
+                    >
+                      <WithStyles(ForwardRef(Checkbox))
+                        name="b"
+                        onChange={[Function]}
+                      >
+                        <ForwardRef(Checkbox)
+                          classes={
+                            Object {
+                              "checked": "Mui-checked",
+                              "colorPrimary": "MuiCheckbox-colorPrimary",
+                              "colorSecondary": "MuiCheckbox-colorSecondary",
+                              "disabled": "Mui-disabled",
+                              "indeterminate": "MuiCheckbox-indeterminate",
+                              "root": "MuiCheckbox-root",
+                            }
+                          }
+                          name="b"
+                          onChange={[Function]}
+                        >
+                          <WithStyles(ForwardRef(SwitchBase))
+                            checkedIcon={
+                              <UNDEFINED
+                                fontSize="default"
+                              />
+                            }
+                            classes={
+                              Object {
+                                "checked": "Mui-checked",
+                                "disabled": "Mui-disabled",
+                                "root": "MuiCheckbox-root MuiCheckbox-colorSecondary",
+                              }
+                            }
+                            color="secondary"
+                            icon={
+                              <UNDEFINED
+                                fontSize="default"
+                              />
+                            }
+                            inputProps={
+                              Object {
+                                "data-indeterminate": false,
+                              }
+                            }
+                            name="b"
+                            onChange={[Function]}
+                            type="checkbox"
+                          >
+                            <ForwardRef(SwitchBase)
+                              checkedIcon={
+                                <UNDEFINED
+                                  fontSize="default"
+                                />
+                              }
+                              classes={
+                                Object {
+                                  "checked": "PrivateSwitchBase-checked-151 Mui-checked",
+                                  "disabled": "PrivateSwitchBase-disabled-152 Mui-disabled",
+                                  "input": "PrivateSwitchBase-input-153",
+                                  "root": "PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary",
+                                }
+                              }
+                              color="secondary"
+                              icon={
+                                <UNDEFINED
+                                  fontSize="default"
+                                />
+                              }
+                              inputProps={
+                                Object {
+                                  "data-indeterminate": false,
+                                }
+                              }
+                              name="b"
+                              onChange={[Function]}
+                              type="checkbox"
+                            >
+                              <WithStyles(ForwardRef(IconButton))
+                                className="PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary"
+                                color="secondary"
+                                component="span"
+                                onBlur={[Function]}
+                                onFocus={[Function]}
+                                tabIndex={null}
+                              >
+                                <ForwardRef(IconButton)
+                                  className="PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary"
+                                  classes={
+                                    Object {
+                                      "colorInherit": "MuiIconButton-colorInherit",
+                                      "colorPrimary": "MuiIconButton-colorPrimary",
+                                      "colorSecondary": "MuiIconButton-colorSecondary",
+                                      "disabled": "Mui-disabled",
+                                      "edgeEnd": "MuiIconButton-edgeEnd",
+                                      "edgeStart": "MuiIconButton-edgeStart",
+                                      "label": "MuiIconButton-label",
+                                      "root": "MuiIconButton-root",
+                                      "sizeSmall": "MuiIconButton-sizeSmall",
+                                    }
+                                  }
+                                  color="secondary"
+                                  component="span"
+                                  onBlur={[Function]}
+                                  onFocus={[Function]}
+                                  tabIndex={null}
+                                >
+                                  <WithStyles(ForwardRef(ButtonBase))
+                                    centerRipple={true}
+                                    className="MuiIconButton-root PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                                    component="span"
+                                    disabled={false}
+                                    focusRipple={true}
+                                    onBlur={[Function]}
+                                    onFocus={[Function]}
+                                    tabIndex={null}
+                                  >
+                                    <ForwardRef(ButtonBase)
+                                      centerRipple={true}
+                                      className="MuiIconButton-root PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                                      classes={
+                                        Object {
+                                          "disabled": "Mui-disabled",
+                                          "focusVisible": "Mui-focusVisible",
+                                          "root": "MuiButtonBase-root",
+                                        }
+                                      }
+                                      component="span"
+                                      disabled={false}
+                                      focusRipple={true}
+                                      onBlur={[Function]}
+                                      onFocus={[Function]}
+                                      tabIndex={null}
+                                    >
+                                      <span
+                                        aria-disabled={false}
+                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-150 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                                        onBlur={[Function]}
+                                        onDragLeave={[Function]}
+                                        onFocus={[Function]}
+                                        onKeyDown={[Function]}
+                                        onKeyUp={[Function]}
+                                        onMouseDown={[Function]}
+                                        onMouseLeave={[Function]}
+                                        onMouseUp={[Function]}
+                                        onTouchEnd={[Function]}
+                                        onTouchMove={[Function]}
+                                        onTouchStart={[Function]}
+                                        tabIndex={null}
+                                      >
+                                        <span
+                                          className="MuiIconButton-label"
+                                        >
+                                          <input
+                                            className="PrivateSwitchBase-input-153"
+                                            data-indeterminate={false}
+                                            name="b"
+                                            onChange={[Function]}
+                                            type="checkbox"
+                                          />
+                                          <ForwardRef
+                                            fontSize="default"
+                                          >
+                                            <WithStyles(ForwardRef(SvgIcon))
+                                              fontSize="default"
+                                            >
+                                              <ForwardRef(SvgIcon)
+                                                classes={
+                                                  Object {
+                                                    "colorAction": "MuiSvgIcon-colorAction",
+                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                    "colorError": "MuiSvgIcon-colorError",
+                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                    "root": "MuiSvgIcon-root",
+                                                  }
+                                                }
+                                                fontSize="default"
+                                              >
+                                                <svg
+                                                  aria-hidden={true}
+                                                  className="MuiSvgIcon-root"
+                                                  focusable="false"
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                                  />
+                                                </svg>
+                                              </ForwardRef(SvgIcon)>
+                                            </WithStyles(ForwardRef(SvgIcon))>
+                                          </ForwardRef>
+                                        </span>
+                                        <WithStyles(memo)
+                                          center={true}
+                                        >
+                                          <ForwardRef(TouchRipple)
+                                            center={true}
+                                            classes={
+                                              Object {
+                                                "child": "MuiTouchRipple-child",
+                                                "childLeaving": "MuiTouchRipple-childLeaving",
+                                                "childPulsate": "MuiTouchRipple-childPulsate",
+                                                "ripple": "MuiTouchRipple-ripple",
+                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                "root": "MuiTouchRipple-root",
+                                              }
+                                            }
+                                          >
+                                            <span
+                                              className="MuiTouchRipple-root"
+                                            >
+                                              <TransitionGroup
+                                                childFactory={[Function]}
+                                                component={null}
+                                                exit={true}
+                                              />
+                                            </span>
+                                          </ForwardRef(TouchRipple)>
+                                        </WithStyles(memo)>
+                                      </span>
+                                    </ForwardRef(ButtonBase)>
+                                  </WithStyles(ForwardRef(ButtonBase))>
+                                </ForwardRef(IconButton)>
+                              </WithStyles(ForwardRef(IconButton))>
+                            </ForwardRef(SwitchBase)>
+                          </WithStyles(ForwardRef(SwitchBase))>
+                        </ForwardRef(Checkbox)>
+                      </WithStyles(ForwardRef(Checkbox))>
+                      <WithStyles(ForwardRef(Typography))
+                        className="MuiFormControlLabel-label"
+                        component="span"
+                      >
+                        <ForwardRef(Typography)
+                          className="MuiFormControlLabel-label"
+                          classes={
+                            Object {
+                              "alignCenter": "MuiTypography-alignCenter",
+                              "alignJustify": "MuiTypography-alignJustify",
+                              "alignLeft": "MuiTypography-alignLeft",
+                              "alignRight": "MuiTypography-alignRight",
+                              "body1": "MuiTypography-body1",
+                              "body2": "MuiTypography-body2",
+                              "button": "MuiTypography-button",
+                              "caption": "MuiTypography-caption",
+                              "colorError": "MuiTypography-colorError",
+                              "colorInherit": "MuiTypography-colorInherit",
+                              "colorPrimary": "MuiTypography-colorPrimary",
+                              "colorSecondary": "MuiTypography-colorSecondary",
+                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                              "displayBlock": "MuiTypography-displayBlock",
+                              "displayInline": "MuiTypography-displayInline",
+                              "gutterBottom": "MuiTypography-gutterBottom",
+                              "h1": "MuiTypography-h1",
+                              "h2": "MuiTypography-h2",
+                              "h3": "MuiTypography-h3",
+                              "h4": "MuiTypography-h4",
+                              "h5": "MuiTypography-h5",
+                              "h6": "MuiTypography-h6",
+                              "noWrap": "MuiTypography-noWrap",
+                              "overline": "MuiTypography-overline",
+                              "paragraph": "MuiTypography-paragraph",
+                              "root": "MuiTypography-root",
+                              "srOnly": "MuiTypography-srOnly",
+                              "subtitle1": "MuiTypography-subtitle1",
+                              "subtitle2": "MuiTypography-subtitle2",
+                            }
+                          }
+                          component="span"
+                        >
+                          <span
+                            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                          >
+                            b
+                          </span>
+                        </ForwardRef(Typography)>
+                      </WithStyles(ForwardRef(Typography))>
+                    </label>
+                  </ForwardRef(FormControlLabel)>
+                </WithStyles(ForwardRef(FormControlLabel))>
+              </div>
+            </ForwardRef(FormGroup)>
+          </WithStyles(ForwardRef(FormGroup))>
+        </div>
+      </ForwardRef(DialogContent)>
+    </WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogContent))>
+      <ForwardRef(DialogContent)
+        classes={
+          Object {
+            "dividers": "MuiDialogContent-dividers",
+            "root": "MuiDialogContent-root",
+          }
+        }
+      >
+        <div
+          className="MuiDialogContent-root"
+        >
+          <WithStyles(ForwardRef(DialogContentText))>
+            <ForwardRef(DialogContentText)
+              classes={
+                Object {
+                  "root": "MuiDialogContentText-root",
+                }
+              }
+            >
+              <WithStyles(ForwardRef(Typography))
+                classes={
+                  Object {
+                    "root": "MuiDialogContentText-root",
+                  }
+                }
+                color="textSecondary"
+                component="p"
+                variant="body1"
+              >
+                <ForwardRef(Typography)
+                  classes={
+                    Object {
+                      "alignCenter": "MuiTypography-alignCenter",
+                      "alignJustify": "MuiTypography-alignJustify",
+                      "alignLeft": "MuiTypography-alignLeft",
+                      "alignRight": "MuiTypography-alignRight",
+                      "body1": "MuiTypography-body1",
+                      "body2": "MuiTypography-body2",
+                      "button": "MuiTypography-button",
+                      "caption": "MuiTypography-caption",
+                      "colorError": "MuiTypography-colorError",
+                      "colorInherit": "MuiTypography-colorInherit",
+                      "colorPrimary": "MuiTypography-colorPrimary",
+                      "colorSecondary": "MuiTypography-colorSecondary",
+                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                      "displayBlock": "MuiTypography-displayBlock",
+                      "displayInline": "MuiTypography-displayInline",
+                      "gutterBottom": "MuiTypography-gutterBottom",
+                      "h1": "MuiTypography-h1",
+                      "h2": "MuiTypography-h2",
+                      "h3": "MuiTypography-h3",
+                      "h4": "MuiTypography-h4",
+                      "h5": "MuiTypography-h5",
+                      "h6": "MuiTypography-h6",
+                      "noWrap": "MuiTypography-noWrap",
+                      "overline": "MuiTypography-overline",
+                      "paragraph": "MuiTypography-paragraph",
+                      "root": "MuiTypography-root MuiDialogContentText-root",
+                      "srOnly": "MuiTypography-srOnly",
+                      "subtitle1": "MuiTypography-subtitle1",
+                      "subtitle2": "MuiTypography-subtitle2",
+                    }
+                  }
+                  color="textSecondary"
+                  component="p"
+                  variant="body1"
+                >
+                  <p
+                    className="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+                  >
+                    Add this photo to a new list by entering a list name and description.
+                  </p>
+                </ForwardRef(Typography)>
+              </WithStyles(ForwardRef(Typography))>
+            </ForwardRef(DialogContentText)>
+          </WithStyles(ForwardRef(DialogContentText))>
+          <WithStyles(ForwardRef(TextField))
+            fullWidth={true}
+            id="new-list-name"
+            label="New List Name"
+            margin="dense"
+            onChange={[Function]}
+            type="text"
+          >
+            <ForwardRef(TextField)
+              classes={
+                Object {
+                  "root": "MuiTextField-root",
+                }
+              }
+              fullWidth={true}
+              id="new-list-name"
+              label="New List Name"
+              margin="dense"
+              onChange={[Function]}
+              type="text"
+            >
+              <WithStyles(ForwardRef(FormControl))
+                className="MuiTextField-root"
+                color="primary"
+                disabled={false}
+                error={false}
+                fullWidth={true}
+                margin="dense"
+                required={false}
+                variant="standard"
+              >
+                <ForwardRef(FormControl)
+                  className="MuiTextField-root"
+                  classes={
+                    Object {
+                      "fullWidth": "MuiFormControl-fullWidth",
+                      "marginDense": "MuiFormControl-marginDense",
+                      "marginNormal": "MuiFormControl-marginNormal",
+                      "root": "MuiFormControl-root",
+                    }
+                  }
+                  color="primary"
+                  disabled={false}
+                  error={false}
+                  fullWidth={true}
+                  margin="dense"
+                  required={false}
+                  variant="standard"
+                >
+                  <div
+                    className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                  >
+                    <WithStyles(ForwardRef(InputLabel))
+                      htmlFor="new-list-name"
+                      id="new-list-name-label"
+                    >
+                      <ForwardRef(InputLabel)
+                        classes={
+                          Object {
+                            "animated": "MuiInputLabel-animated",
+                            "asterisk": "MuiInputLabel-asterisk",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "filled": "MuiInputLabel-filled",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInputLabel-formControl",
+                            "marginDense": "MuiInputLabel-marginDense",
+                            "outlined": "MuiInputLabel-outlined",
+                            "required": "Mui-required",
+                            "root": "MuiInputLabel-root",
+                            "shrink": "MuiInputLabel-shrink",
+                          }
+                        }
+                        htmlFor="new-list-name"
+                        id="new-list-name-label"
+                      >
+                        <WithStyles(ForwardRef(FormLabel))
+                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                          classes={
+                            Object {
+                              "asterisk": "MuiInputLabel-asterisk",
+                              "disabled": "Mui-disabled",
+                              "error": "Mui-error",
+                              "focused": "Mui-focused",
+                              "required": "Mui-required",
+                            }
+                          }
+                          data-shrink={false}
+                          htmlFor="new-list-name"
+                          id="new-list-name-label"
+                        >
+                          <ForwardRef(FormLabel)
+                            className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                            classes={
+                              Object {
+                                "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                                "colorSecondary": "MuiFormLabel-colorSecondary",
+                                "disabled": "Mui-disabled Mui-disabled",
+                                "error": "Mui-error Mui-error",
+                                "filled": "MuiFormLabel-filled",
+                                "focused": "Mui-focused Mui-focused",
+                                "required": "Mui-required Mui-required",
+                                "root": "MuiFormLabel-root",
+                              }
+                            }
+                            data-shrink={false}
+                            htmlFor="new-list-name"
+                            id="new-list-name-label"
+                          >
+                            <label
+                              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                              data-shrink={false}
+                              htmlFor="new-list-name"
+                              id="new-list-name-label"
+                            >
+                              New List Name
+                            </label>
+                          </ForwardRef(FormLabel)>
+                        </WithStyles(ForwardRef(FormLabel))>
+                      </ForwardRef(InputLabel)>
+                    </WithStyles(ForwardRef(InputLabel))>
+                    <WithStyles(ForwardRef(Input))
+                      autoFocus={false}
+                      fullWidth={true}
+                      id="new-list-name"
+                      multiline={false}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <ForwardRef(Input)
+                        autoFocus={false}
+                        classes={
+                          Object {
+                            "colorSecondary": "MuiInput-colorSecondary",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInput-formControl",
+                            "fullWidth": "MuiInput-fullWidth",
+                            "input": "MuiInput-input",
+                            "inputMarginDense": "MuiInput-inputMarginDense",
+                            "inputMultiline": "MuiInput-inputMultiline",
+                            "inputTypeSearch": "MuiInput-inputTypeSearch",
+                            "marginDense": "MuiInput-marginDense",
+                            "multiline": "MuiInput-multiline",
+                            "root": "MuiInput-root",
+                            "underline": "MuiInput-underline",
+                          }
+                        }
+                        fullWidth={true}
+                        id="new-list-name"
+                        multiline={false}
+                        onChange={[Function]}
+                        type="text"
+                      >
+                        <WithStyles(ForwardRef(InputBase))
+                          autoFocus={false}
+                          classes={
+                            Object {
+                              "colorSecondary": "MuiInput-colorSecondary",
+                              "disabled": "Mui-disabled",
+                              "error": "Mui-error",
+                              "focused": "Mui-focused",
+                              "formControl": "MuiInput-formControl",
+                              "fullWidth": "MuiInput-fullWidth",
+                              "input": "MuiInput-input",
+                              "inputMarginDense": "MuiInput-inputMarginDense",
+                              "inputMultiline": "MuiInput-inputMultiline",
+                              "inputTypeSearch": "MuiInput-inputTypeSearch",
+                              "marginDense": "MuiInput-marginDense",
+                              "multiline": "MuiInput-multiline",
+                              "root": "MuiInput-root MuiInput-underline",
+                              "underline": null,
+                            }
+                          }
+                          fullWidth={true}
+                          id="new-list-name"
+                          inputComponent="input"
+                          multiline={false}
+                          onChange={[Function]}
+                          type="text"
+                        >
+                          <ForwardRef(InputBase)
+                            autoFocus={false}
+                            classes={
+                              Object {
+                                "adornedEnd": "MuiInputBase-adornedEnd",
+                                "adornedStart": "MuiInputBase-adornedStart",
+                                "colorSecondary": "MuiInputBase-colorSecondary MuiInput-colorSecondary",
+                                "disabled": "Mui-disabled Mui-disabled",
+                                "error": "Mui-error Mui-error",
+                                "focused": "Mui-focused Mui-focused",
+                                "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                                "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                                "input": "MuiInputBase-input MuiInput-input",
+                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                                "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                                "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                                "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                                "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                                "marginDense": "MuiInputBase-marginDense MuiInput-marginDense",
+                                "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                                "root": "MuiInputBase-root MuiInput-root MuiInput-underline",
+                              }
+                            }
+                            fullWidth={true}
+                            id="new-list-name"
+                            inputComponent="input"
+                            multiline={false}
+                            onChange={[Function]}
+                            type="text"
+                          >
+                            <div
+                              className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense"
+                              onClick={[Function]}
+                            >
+                              <input
+                                aria-invalid={false}
+                                autoFocus={false}
+                                className="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+                                disabled={false}
+                                id="new-list-name"
+                                onAnimationStart={[Function]}
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                required={false}
+                                type="text"
+                              />
+                            </div>
+                          </ForwardRef(InputBase)>
+                        </WithStyles(ForwardRef(InputBase))>
+                      </ForwardRef(Input)>
+                    </WithStyles(ForwardRef(Input))>
+                  </div>
+                </ForwardRef(FormControl)>
+              </WithStyles(ForwardRef(FormControl))>
+            </ForwardRef(TextField)>
+          </WithStyles(ForwardRef(TextField))>
+          <WithStyles(ForwardRef(TextField))
+            fullWidth={true}
+            id="new-list-description"
+            label="List Description"
+            margin="dense"
+            onChange={[Function]}
+            type="text"
+          >
+            <ForwardRef(TextField)
+              classes={
+                Object {
+                  "root": "MuiTextField-root",
+                }
+              }
+              fullWidth={true}
+              id="new-list-description"
+              label="List Description"
+              margin="dense"
+              onChange={[Function]}
+              type="text"
+            >
+              <WithStyles(ForwardRef(FormControl))
+                className="MuiTextField-root"
+                color="primary"
+                disabled={false}
+                error={false}
+                fullWidth={true}
+                margin="dense"
+                required={false}
+                variant="standard"
+              >
+                <ForwardRef(FormControl)
+                  className="MuiTextField-root"
+                  classes={
+                    Object {
+                      "fullWidth": "MuiFormControl-fullWidth",
+                      "marginDense": "MuiFormControl-marginDense",
+                      "marginNormal": "MuiFormControl-marginNormal",
+                      "root": "MuiFormControl-root",
+                    }
+                  }
+                  color="primary"
+                  disabled={false}
+                  error={false}
+                  fullWidth={true}
+                  margin="dense"
+                  required={false}
+                  variant="standard"
+                >
+                  <div
+                    className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                  >
+                    <WithStyles(ForwardRef(InputLabel))
+                      htmlFor="new-list-description"
+                      id="new-list-description-label"
+                    >
+                      <ForwardRef(InputLabel)
+                        classes={
+                          Object {
+                            "animated": "MuiInputLabel-animated",
+                            "asterisk": "MuiInputLabel-asterisk",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "filled": "MuiInputLabel-filled",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInputLabel-formControl",
+                            "marginDense": "MuiInputLabel-marginDense",
+                            "outlined": "MuiInputLabel-outlined",
+                            "required": "Mui-required",
+                            "root": "MuiInputLabel-root",
+                            "shrink": "MuiInputLabel-shrink",
+                          }
+                        }
+                        htmlFor="new-list-description"
+                        id="new-list-description-label"
+                      >
+                        <WithStyles(ForwardRef(FormLabel))
+                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                          classes={
+                            Object {
+                              "asterisk": "MuiInputLabel-asterisk",
+                              "disabled": "Mui-disabled",
+                              "error": "Mui-error",
+                              "focused": "Mui-focused",
+                              "required": "Mui-required",
+                            }
+                          }
+                          data-shrink={false}
+                          htmlFor="new-list-description"
+                          id="new-list-description-label"
+                        >
+                          <ForwardRef(FormLabel)
+                            className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                            classes={
+                              Object {
+                                "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                                "colorSecondary": "MuiFormLabel-colorSecondary",
+                                "disabled": "Mui-disabled Mui-disabled",
+                                "error": "Mui-error Mui-error",
+                                "filled": "MuiFormLabel-filled",
+                                "focused": "Mui-focused Mui-focused",
+                                "required": "Mui-required Mui-required",
+                                "root": "MuiFormLabel-root",
+                              }
+                            }
+                            data-shrink={false}
+                            htmlFor="new-list-description"
+                            id="new-list-description-label"
+                          >
+                            <label
+                              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                              data-shrink={false}
+                              htmlFor="new-list-description"
+                              id="new-list-description-label"
+                            >
+                              List Description
+                            </label>
+                          </ForwardRef(FormLabel)>
+                        </WithStyles(ForwardRef(FormLabel))>
+                      </ForwardRef(InputLabel)>
+                    </WithStyles(ForwardRef(InputLabel))>
+                    <WithStyles(ForwardRef(Input))
+                      autoFocus={false}
+                      fullWidth={true}
+                      id="new-list-description"
+                      multiline={false}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <ForwardRef(Input)
+                        autoFocus={false}
+                        classes={
+                          Object {
+                            "colorSecondary": "MuiInput-colorSecondary",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInput-formControl",
+                            "fullWidth": "MuiInput-fullWidth",
+                            "input": "MuiInput-input",
+                            "inputMarginDense": "MuiInput-inputMarginDense",
+                            "inputMultiline": "MuiInput-inputMultiline",
+                            "inputTypeSearch": "MuiInput-inputTypeSearch",
+                            "marginDense": "MuiInput-marginDense",
+                            "multiline": "MuiInput-multiline",
+                            "root": "MuiInput-root",
+                            "underline": "MuiInput-underline",
+                          }
+                        }
+                        fullWidth={true}
+                        id="new-list-description"
+                        multiline={false}
+                        onChange={[Function]}
+                        type="text"
+                      >
+                        <WithStyles(ForwardRef(InputBase))
+                          autoFocus={false}
+                          classes={
+                            Object {
+                              "colorSecondary": "MuiInput-colorSecondary",
+                              "disabled": "Mui-disabled",
+                              "error": "Mui-error",
+                              "focused": "Mui-focused",
+                              "formControl": "MuiInput-formControl",
+                              "fullWidth": "MuiInput-fullWidth",
+                              "input": "MuiInput-input",
+                              "inputMarginDense": "MuiInput-inputMarginDense",
+                              "inputMultiline": "MuiInput-inputMultiline",
+                              "inputTypeSearch": "MuiInput-inputTypeSearch",
+                              "marginDense": "MuiInput-marginDense",
+                              "multiline": "MuiInput-multiline",
+                              "root": "MuiInput-root MuiInput-underline",
+                              "underline": null,
+                            }
+                          }
+                          fullWidth={true}
+                          id="new-list-description"
+                          inputComponent="input"
+                          multiline={false}
+                          onChange={[Function]}
+                          type="text"
+                        >
+                          <ForwardRef(InputBase)
+                            autoFocus={false}
+                            classes={
+                              Object {
+                                "adornedEnd": "MuiInputBase-adornedEnd",
+                                "adornedStart": "MuiInputBase-adornedStart",
+                                "colorSecondary": "MuiInputBase-colorSecondary MuiInput-colorSecondary",
+                                "disabled": "Mui-disabled Mui-disabled",
+                                "error": "Mui-error Mui-error",
+                                "focused": "Mui-focused Mui-focused",
+                                "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                                "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                                "input": "MuiInputBase-input MuiInput-input",
+                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                                "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                                "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                                "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                                "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                                "marginDense": "MuiInputBase-marginDense MuiInput-marginDense",
+                                "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                                "root": "MuiInputBase-root MuiInput-root MuiInput-underline",
+                              }
+                            }
+                            fullWidth={true}
+                            id="new-list-description"
+                            inputComponent="input"
+                            multiline={false}
+                            onChange={[Function]}
+                            type="text"
+                          >
+                            <div
+                              className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense"
+                              onClick={[Function]}
+                            >
+                              <input
+                                aria-invalid={false}
+                                autoFocus={false}
+                                className="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+                                disabled={false}
+                                id="new-list-description"
+                                onAnimationStart={[Function]}
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                required={false}
+                                type="text"
+                              />
+                            </div>
+                          </ForwardRef(InputBase)>
+                        </WithStyles(ForwardRef(InputBase))>
+                      </ForwardRef(Input)>
+                    </WithStyles(ForwardRef(Input))>
+                  </div>
+                </ForwardRef(FormControl)>
+              </WithStyles(ForwardRef(FormControl))>
+            </ForwardRef(TextField)>
+          </WithStyles(ForwardRef(TextField))>
+        </div>
+      </ForwardRef(DialogContent)>
+    </WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogActions))>
+      <ForwardRef(DialogActions)
+        classes={
+          Object {
+            "root": "MuiDialogActions-root",
+            "spacing": "MuiDialogActions-spacing",
+          }
+        }
+      >
+        <div
+          className="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <WithStyles(ForwardRef(Button))
+            color="primary"
+            onClick={[Function]}
+          >
+            <ForwardRef(Button)
+              classes={
+                Object {
+                  "colorInherit": "MuiButton-colorInherit",
+                  "contained": "MuiButton-contained",
+                  "containedPrimary": "MuiButton-containedPrimary",
+                  "containedSecondary": "MuiButton-containedSecondary",
+                  "containedSizeLarge": "MuiButton-containedSizeLarge",
+                  "containedSizeSmall": "MuiButton-containedSizeSmall",
+                  "disableElevation": "MuiButton-disableElevation",
+                  "disabled": "Mui-disabled",
+                  "endIcon": "MuiButton-endIcon",
+                  "focusVisible": "Mui-focusVisible",
+                  "fullWidth": "MuiButton-fullWidth",
+                  "iconSizeLarge": "MuiButton-iconSizeLarge",
+                  "iconSizeMedium": "MuiButton-iconSizeMedium",
+                  "iconSizeSmall": "MuiButton-iconSizeSmall",
+                  "label": "MuiButton-label",
+                  "outlined": "MuiButton-outlined",
+                  "outlinedPrimary": "MuiButton-outlinedPrimary",
+                  "outlinedSecondary": "MuiButton-outlinedSecondary",
+                  "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+                  "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+                  "root": "MuiButton-root",
+                  "sizeLarge": "MuiButton-sizeLarge",
+                  "sizeSmall": "MuiButton-sizeSmall",
+                  "startIcon": "MuiButton-startIcon",
+                  "text": "MuiButton-text",
+                  "textPrimary": "MuiButton-textPrimary",
+                  "textSecondary": "MuiButton-textSecondary",
+                  "textSizeLarge": "MuiButton-textSizeLarge",
+                  "textSizeSmall": "MuiButton-textSizeSmall",
+                }
+              }
+              color="primary"
+              onClick={[Function]}
+            >
+              <WithStyles(ForwardRef(ButtonBase))
+                className="MuiButton-root MuiButton-text MuiButton-textPrimary"
+                component="button"
+                disabled={false}
+                focusRipple={true}
+                focusVisibleClassName="Mui-focusVisible"
+                onClick={[Function]}
+                type="button"
+              >
+                <ForwardRef(ButtonBase)
+                  className="MuiButton-root MuiButton-text MuiButton-textPrimary"
+                  classes={
+                    Object {
+                      "disabled": "Mui-disabled",
+                      "focusVisible": "Mui-focusVisible",
+                      "root": "MuiButtonBase-root",
+                    }
+                  }
+                  component="button"
+                  disabled={false}
+                  focusRipple={true}
+                  focusVisibleClassName="Mui-focusVisible"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <button
+                    className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <span
+                      className="MuiButton-label"
+                    >
+                      Cancel
+                    </span>
+                    <WithStyles(memo)
+                      center={false}
+                    >
+                      <ForwardRef(TouchRipple)
+                        center={false}
+                        classes={
+                          Object {
+                            "child": "MuiTouchRipple-child",
+                            "childLeaving": "MuiTouchRipple-childLeaving",
+                            "childPulsate": "MuiTouchRipple-childPulsate",
+                            "ripple": "MuiTouchRipple-ripple",
+                            "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                            "rippleVisible": "MuiTouchRipple-rippleVisible",
+                            "root": "MuiTouchRipple-root",
+                          }
+                        }
+                      >
+                        <span
+                          className="MuiTouchRipple-root"
+                        >
+                          <TransitionGroup
+                            childFactory={[Function]}
+                            component={null}
+                            exit={true}
+                          />
+                        </span>
+                      </ForwardRef(TouchRipple)>
+                    </WithStyles(memo)>
+                  </button>
+                </ForwardRef(ButtonBase)>
+              </WithStyles(ForwardRef(ButtonBase))>
+            </ForwardRef(Button)>
+          </WithStyles(ForwardRef(Button))>
+          <WithStyles(ForwardRef(Button))
+            color="primary"
+            onClick={[Function]}
+          >
+            <ForwardRef(Button)
+              classes={
+                Object {
+                  "colorInherit": "MuiButton-colorInherit",
+                  "contained": "MuiButton-contained",
+                  "containedPrimary": "MuiButton-containedPrimary",
+                  "containedSecondary": "MuiButton-containedSecondary",
+                  "containedSizeLarge": "MuiButton-containedSizeLarge",
+                  "containedSizeSmall": "MuiButton-containedSizeSmall",
+                  "disableElevation": "MuiButton-disableElevation",
+                  "disabled": "Mui-disabled",
+                  "endIcon": "MuiButton-endIcon",
+                  "focusVisible": "Mui-focusVisible",
+                  "fullWidth": "MuiButton-fullWidth",
+                  "iconSizeLarge": "MuiButton-iconSizeLarge",
+                  "iconSizeMedium": "MuiButton-iconSizeMedium",
+                  "iconSizeSmall": "MuiButton-iconSizeSmall",
+                  "label": "MuiButton-label",
+                  "outlined": "MuiButton-outlined",
+                  "outlinedPrimary": "MuiButton-outlinedPrimary",
+                  "outlinedSecondary": "MuiButton-outlinedSecondary",
+                  "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+                  "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+                  "root": "MuiButton-root",
+                  "sizeLarge": "MuiButton-sizeLarge",
+                  "sizeSmall": "MuiButton-sizeSmall",
+                  "startIcon": "MuiButton-startIcon",
+                  "text": "MuiButton-text",
+                  "textPrimary": "MuiButton-textPrimary",
+                  "textSecondary": "MuiButton-textSecondary",
+                  "textSizeLarge": "MuiButton-textSizeLarge",
+                  "textSizeSmall": "MuiButton-textSizeSmall",
+                }
+              }
+              color="primary"
+              onClick={[Function]}
+            >
+              <WithStyles(ForwardRef(ButtonBase))
+                className="MuiButton-root MuiButton-text MuiButton-textPrimary"
+                component="button"
+                disabled={false}
+                focusRipple={true}
+                focusVisibleClassName="Mui-focusVisible"
+                onClick={[Function]}
+                type="button"
+              >
+                <ForwardRef(ButtonBase)
+                  className="MuiButton-root MuiButton-text MuiButton-textPrimary"
+                  classes={
+                    Object {
+                      "disabled": "Mui-disabled",
+                      "focusVisible": "Mui-focusVisible",
+                      "root": "MuiButtonBase-root",
+                    }
+                  }
+                  component="button"
+                  disabled={false}
+                  focusRipple={true}
+                  focusVisibleClassName="Mui-focusVisible"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <button
+                    className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <span
+                      className="MuiButton-label"
+                    >
+                      Save
+                    </span>
+                    <WithStyles(memo)
+                      center={false}
+                    >
+                      <ForwardRef(TouchRipple)
+                        center={false}
+                        classes={
+                          Object {
+                            "child": "MuiTouchRipple-child",
+                            "childLeaving": "MuiTouchRipple-childLeaving",
+                            "childPulsate": "MuiTouchRipple-childPulsate",
+                            "ripple": "MuiTouchRipple-ripple",
+                            "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                            "rippleVisible": "MuiTouchRipple-rippleVisible",
+                            "root": "MuiTouchRipple-root",
+                          }
+                        }
+                      >
+                        <span
+                          className="MuiTouchRipple-root"
+                        >
+                          <TransitionGroup
+                            childFactory={[Function]}
+                            component={null}
+                            exit={true}
+                          />
+                        </span>
+                      </ForwardRef(TouchRipple)>
+                    </WithStyles(memo)>
+                  </button>
+                </ForwardRef(ButtonBase)>
+              </WithStyles(ForwardRef(ButtonBase))>
+            </ForwardRef(Button)>
+          </WithStyles(ForwardRef(Button))>
+        </div>
+      </ForwardRef(DialogActions)>
+    </WithStyles(ForwardRef(DialogActions))>
+  </div>
+</AddToFavoritesDialogForm>
+`;
+
+exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
+<AddToFavoritesDialogForm
+  categories={Array []}
+  onClose={[Function]}
+  onSave={[Function]}
+>
+  <div>
+    <WithStyles(ForwardRef(DialogTitle))
+      id="form-dialog-title"
+    >
+      <ForwardRef(DialogTitle)
+        classes={
+          Object {
+            "root": "MuiDialogTitle-root",
+          }
+        }
+        id="form-dialog-title"
+      >
+        <div
+          className="MuiDialogTitle-root"
+          id="form-dialog-title"
+        >
+          <WithStyles(ForwardRef(Typography))
+            component="h2"
+            variant="h6"
+          >
+            <ForwardRef(Typography)
+              classes={
+                Object {
+                  "alignCenter": "MuiTypography-alignCenter",
+                  "alignJustify": "MuiTypography-alignJustify",
+                  "alignLeft": "MuiTypography-alignLeft",
+                  "alignRight": "MuiTypography-alignRight",
+                  "body1": "MuiTypography-body1",
+                  "body2": "MuiTypography-body2",
+                  "button": "MuiTypography-button",
+                  "caption": "MuiTypography-caption",
+                  "colorError": "MuiTypography-colorError",
+                  "colorInherit": "MuiTypography-colorInherit",
+                  "colorPrimary": "MuiTypography-colorPrimary",
+                  "colorSecondary": "MuiTypography-colorSecondary",
+                  "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                  "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                  "displayBlock": "MuiTypography-displayBlock",
+                  "displayInline": "MuiTypography-displayInline",
+                  "gutterBottom": "MuiTypography-gutterBottom",
+                  "h1": "MuiTypography-h1",
+                  "h2": "MuiTypography-h2",
+                  "h3": "MuiTypography-h3",
+                  "h4": "MuiTypography-h4",
+                  "h5": "MuiTypography-h5",
+                  "h6": "MuiTypography-h6",
+                  "noWrap": "MuiTypography-noWrap",
+                  "overline": "MuiTypography-overline",
+                  "paragraph": "MuiTypography-paragraph",
+                  "root": "MuiTypography-root",
+                  "srOnly": "MuiTypography-srOnly",
+                  "subtitle1": "MuiTypography-subtitle1",
+                  "subtitle2": "MuiTypography-subtitle2",
+                }
+              }
+              component="h2"
+              variant="h6"
+            >
+              <h2
+                className="MuiTypography-root MuiTypography-h6"
+              >
+                Add to List
+              </h2>
+            </ForwardRef(Typography)>
+          </WithStyles(ForwardRef(Typography))>
+        </div>
+      </ForwardRef(DialogTitle)>
+    </WithStyles(ForwardRef(DialogTitle))>
+    0
+    <WithStyles(ForwardRef(DialogContent))>
+      <ForwardRef(DialogContent)
+        classes={
+          Object {
+            "dividers": "MuiDialogContent-dividers",
+            "root": "MuiDialogContent-root",
+          }
+        }
+      >
+        <div
+          className="MuiDialogContent-root"
+        >
+          <WithStyles(ForwardRef(DialogContentText))>
+            <ForwardRef(DialogContentText)
+              classes={
+                Object {
+                  "root": "MuiDialogContentText-root",
+                }
+              }
+            >
+              <WithStyles(ForwardRef(Typography))
+                classes={
+                  Object {
+                    "root": "MuiDialogContentText-root",
+                  }
+                }
+                color="textSecondary"
+                component="p"
+                variant="body1"
+              >
+                <ForwardRef(Typography)
+                  classes={
+                    Object {
+                      "alignCenter": "MuiTypography-alignCenter",
+                      "alignJustify": "MuiTypography-alignJustify",
+                      "alignLeft": "MuiTypography-alignLeft",
+                      "alignRight": "MuiTypography-alignRight",
+                      "body1": "MuiTypography-body1",
+                      "body2": "MuiTypography-body2",
+                      "button": "MuiTypography-button",
+                      "caption": "MuiTypography-caption",
+                      "colorError": "MuiTypography-colorError",
+                      "colorInherit": "MuiTypography-colorInherit",
+                      "colorPrimary": "MuiTypography-colorPrimary",
+                      "colorSecondary": "MuiTypography-colorSecondary",
+                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                      "displayBlock": "MuiTypography-displayBlock",
+                      "displayInline": "MuiTypography-displayInline",
+                      "gutterBottom": "MuiTypography-gutterBottom",
+                      "h1": "MuiTypography-h1",
+                      "h2": "MuiTypography-h2",
+                      "h3": "MuiTypography-h3",
+                      "h4": "MuiTypography-h4",
+                      "h5": "MuiTypography-h5",
+                      "h6": "MuiTypography-h6",
+                      "noWrap": "MuiTypography-noWrap",
+                      "overline": "MuiTypography-overline",
+                      "paragraph": "MuiTypography-paragraph",
+                      "root": "MuiTypography-root MuiDialogContentText-root",
+                      "srOnly": "MuiTypography-srOnly",
+                      "subtitle1": "MuiTypography-subtitle1",
+                      "subtitle2": "MuiTypography-subtitle2",
+                    }
+                  }
+                  color="textSecondary"
+                  component="p"
+                  variant="body1"
+                >
+                  <p
+                    className="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+                  >
+                    Add this photo to a new list by entering a list name and description.
+                  </p>
+                </ForwardRef(Typography)>
+              </WithStyles(ForwardRef(Typography))>
+            </ForwardRef(DialogContentText)>
+          </WithStyles(ForwardRef(DialogContentText))>
+          <WithStyles(ForwardRef(TextField))
+            fullWidth={true}
+            id="new-list-name"
+            label="New List Name"
+            margin="dense"
+            onChange={[Function]}
+            type="text"
+          >
+            <ForwardRef(TextField)
+              classes={
+                Object {
+                  "root": "MuiTextField-root",
+                }
+              }
+              fullWidth={true}
+              id="new-list-name"
+              label="New List Name"
+              margin="dense"
+              onChange={[Function]}
+              type="text"
+            >
+              <WithStyles(ForwardRef(FormControl))
+                className="MuiTextField-root"
+                color="primary"
+                disabled={false}
+                error={false}
+                fullWidth={true}
+                margin="dense"
+                required={false}
+                variant="standard"
+              >
+                <ForwardRef(FormControl)
+                  className="MuiTextField-root"
+                  classes={
+                    Object {
+                      "fullWidth": "MuiFormControl-fullWidth",
+                      "marginDense": "MuiFormControl-marginDense",
+                      "marginNormal": "MuiFormControl-marginNormal",
+                      "root": "MuiFormControl-root",
+                    }
+                  }
+                  color="primary"
+                  disabled={false}
+                  error={false}
+                  fullWidth={true}
+                  margin="dense"
+                  required={false}
+                  variant="standard"
+                >
+                  <div
+                    className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                  >
+                    <WithStyles(ForwardRef(InputLabel))
+                      htmlFor="new-list-name"
+                      id="new-list-name-label"
+                    >
+                      <ForwardRef(InputLabel)
+                        classes={
+                          Object {
+                            "animated": "MuiInputLabel-animated",
+                            "asterisk": "MuiInputLabel-asterisk",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "filled": "MuiInputLabel-filled",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInputLabel-formControl",
+                            "marginDense": "MuiInputLabel-marginDense",
+                            "outlined": "MuiInputLabel-outlined",
+                            "required": "Mui-required",
+                            "root": "MuiInputLabel-root",
+                            "shrink": "MuiInputLabel-shrink",
+                          }
+                        }
+                        htmlFor="new-list-name"
+                        id="new-list-name-label"
+                      >
+                        <WithStyles(ForwardRef(FormLabel))
+                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                          classes={
+                            Object {
+                              "asterisk": "MuiInputLabel-asterisk",
+                              "disabled": "Mui-disabled",
+                              "error": "Mui-error",
+                              "focused": "Mui-focused",
+                              "required": "Mui-required",
+                            }
+                          }
+                          data-shrink={false}
+                          htmlFor="new-list-name"
+                          id="new-list-name-label"
+                        >
+                          <ForwardRef(FormLabel)
+                            className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                            classes={
+                              Object {
+                                "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                                "colorSecondary": "MuiFormLabel-colorSecondary",
+                                "disabled": "Mui-disabled Mui-disabled",
+                                "error": "Mui-error Mui-error",
+                                "filled": "MuiFormLabel-filled",
+                                "focused": "Mui-focused Mui-focused",
+                                "required": "Mui-required Mui-required",
+                                "root": "MuiFormLabel-root",
+                              }
+                            }
+                            data-shrink={false}
+                            htmlFor="new-list-name"
+                            id="new-list-name-label"
+                          >
+                            <label
+                              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                              data-shrink={false}
+                              htmlFor="new-list-name"
+                              id="new-list-name-label"
+                            >
+                              New List Name
+                            </label>
+                          </ForwardRef(FormLabel)>
+                        </WithStyles(ForwardRef(FormLabel))>
+                      </ForwardRef(InputLabel)>
+                    </WithStyles(ForwardRef(InputLabel))>
+                    <WithStyles(ForwardRef(Input))
+                      autoFocus={false}
+                      fullWidth={true}
+                      id="new-list-name"
+                      multiline={false}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <ForwardRef(Input)
+                        autoFocus={false}
+                        classes={
+                          Object {
+                            "colorSecondary": "MuiInput-colorSecondary",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInput-formControl",
+                            "fullWidth": "MuiInput-fullWidth",
+                            "input": "MuiInput-input",
+                            "inputMarginDense": "MuiInput-inputMarginDense",
+                            "inputMultiline": "MuiInput-inputMultiline",
+                            "inputTypeSearch": "MuiInput-inputTypeSearch",
+                            "marginDense": "MuiInput-marginDense",
+                            "multiline": "MuiInput-multiline",
+                            "root": "MuiInput-root",
+                            "underline": "MuiInput-underline",
+                          }
+                        }
+                        fullWidth={true}
+                        id="new-list-name"
+                        multiline={false}
+                        onChange={[Function]}
+                        type="text"
+                      >
+                        <WithStyles(ForwardRef(InputBase))
+                          autoFocus={false}
+                          classes={
+                            Object {
+                              "colorSecondary": "MuiInput-colorSecondary",
+                              "disabled": "Mui-disabled",
+                              "error": "Mui-error",
+                              "focused": "Mui-focused",
+                              "formControl": "MuiInput-formControl",
+                              "fullWidth": "MuiInput-fullWidth",
+                              "input": "MuiInput-input",
+                              "inputMarginDense": "MuiInput-inputMarginDense",
+                              "inputMultiline": "MuiInput-inputMultiline",
+                              "inputTypeSearch": "MuiInput-inputTypeSearch",
+                              "marginDense": "MuiInput-marginDense",
+                              "multiline": "MuiInput-multiline",
+                              "root": "MuiInput-root MuiInput-underline",
+                              "underline": null,
+                            }
+                          }
+                          fullWidth={true}
+                          id="new-list-name"
+                          inputComponent="input"
+                          multiline={false}
+                          onChange={[Function]}
+                          type="text"
+                        >
+                          <ForwardRef(InputBase)
+                            autoFocus={false}
+                            classes={
+                              Object {
+                                "adornedEnd": "MuiInputBase-adornedEnd",
+                                "adornedStart": "MuiInputBase-adornedStart",
+                                "colorSecondary": "MuiInputBase-colorSecondary MuiInput-colorSecondary",
+                                "disabled": "Mui-disabled Mui-disabled",
+                                "error": "Mui-error Mui-error",
+                                "focused": "Mui-focused Mui-focused",
+                                "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                                "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                                "input": "MuiInputBase-input MuiInput-input",
+                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                                "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                                "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                                "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                                "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                                "marginDense": "MuiInputBase-marginDense MuiInput-marginDense",
+                                "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                                "root": "MuiInputBase-root MuiInput-root MuiInput-underline",
+                              }
+                            }
+                            fullWidth={true}
+                            id="new-list-name"
+                            inputComponent="input"
+                            multiline={false}
+                            onChange={[Function]}
+                            type="text"
+                          >
+                            <div
+                              className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense"
+                              onClick={[Function]}
+                            >
+                              <input
+                                aria-invalid={false}
+                                autoFocus={false}
+                                className="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+                                disabled={false}
+                                id="new-list-name"
+                                onAnimationStart={[Function]}
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                required={false}
+                                type="text"
+                              />
+                            </div>
+                          </ForwardRef(InputBase)>
+                        </WithStyles(ForwardRef(InputBase))>
+                      </ForwardRef(Input)>
+                    </WithStyles(ForwardRef(Input))>
+                  </div>
+                </ForwardRef(FormControl)>
+              </WithStyles(ForwardRef(FormControl))>
+            </ForwardRef(TextField)>
+          </WithStyles(ForwardRef(TextField))>
+          <WithStyles(ForwardRef(TextField))
+            fullWidth={true}
+            id="new-list-description"
+            label="List Description"
+            margin="dense"
+            onChange={[Function]}
+            type="text"
+          >
+            <ForwardRef(TextField)
+              classes={
+                Object {
+                  "root": "MuiTextField-root",
+                }
+              }
+              fullWidth={true}
+              id="new-list-description"
+              label="List Description"
+              margin="dense"
+              onChange={[Function]}
+              type="text"
+            >
+              <WithStyles(ForwardRef(FormControl))
+                className="MuiTextField-root"
+                color="primary"
+                disabled={false}
+                error={false}
+                fullWidth={true}
+                margin="dense"
+                required={false}
+                variant="standard"
+              >
+                <ForwardRef(FormControl)
+                  className="MuiTextField-root"
+                  classes={
+                    Object {
+                      "fullWidth": "MuiFormControl-fullWidth",
+                      "marginDense": "MuiFormControl-marginDense",
+                      "marginNormal": "MuiFormControl-marginNormal",
+                      "root": "MuiFormControl-root",
+                    }
+                  }
+                  color="primary"
+                  disabled={false}
+                  error={false}
+                  fullWidth={true}
+                  margin="dense"
+                  required={false}
+                  variant="standard"
+                >
+                  <div
+                    className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                  >
+                    <WithStyles(ForwardRef(InputLabel))
+                      htmlFor="new-list-description"
+                      id="new-list-description-label"
+                    >
+                      <ForwardRef(InputLabel)
+                        classes={
+                          Object {
+                            "animated": "MuiInputLabel-animated",
+                            "asterisk": "MuiInputLabel-asterisk",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "filled": "MuiInputLabel-filled",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInputLabel-formControl",
+                            "marginDense": "MuiInputLabel-marginDense",
+                            "outlined": "MuiInputLabel-outlined",
+                            "required": "Mui-required",
+                            "root": "MuiInputLabel-root",
+                            "shrink": "MuiInputLabel-shrink",
+                          }
+                        }
+                        htmlFor="new-list-description"
+                        id="new-list-description-label"
+                      >
+                        <WithStyles(ForwardRef(FormLabel))
+                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                          classes={
+                            Object {
+                              "asterisk": "MuiInputLabel-asterisk",
+                              "disabled": "Mui-disabled",
+                              "error": "Mui-error",
+                              "focused": "Mui-focused",
+                              "required": "Mui-required",
+                            }
+                          }
+                          data-shrink={false}
+                          htmlFor="new-list-description"
+                          id="new-list-description-label"
+                        >
+                          <ForwardRef(FormLabel)
+                            className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                            classes={
+                              Object {
+                                "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                                "colorSecondary": "MuiFormLabel-colorSecondary",
+                                "disabled": "Mui-disabled Mui-disabled",
+                                "error": "Mui-error Mui-error",
+                                "filled": "MuiFormLabel-filled",
+                                "focused": "Mui-focused Mui-focused",
+                                "required": "Mui-required Mui-required",
+                                "root": "MuiFormLabel-root",
+                              }
+                            }
+                            data-shrink={false}
+                            htmlFor="new-list-description"
+                            id="new-list-description-label"
+                          >
+                            <label
+                              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+                              data-shrink={false}
+                              htmlFor="new-list-description"
+                              id="new-list-description-label"
+                            >
+                              List Description
+                            </label>
+                          </ForwardRef(FormLabel)>
+                        </WithStyles(ForwardRef(FormLabel))>
+                      </ForwardRef(InputLabel)>
+                    </WithStyles(ForwardRef(InputLabel))>
+                    <WithStyles(ForwardRef(Input))
+                      autoFocus={false}
+                      fullWidth={true}
+                      id="new-list-description"
+                      multiline={false}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <ForwardRef(Input)
+                        autoFocus={false}
+                        classes={
+                          Object {
+                            "colorSecondary": "MuiInput-colorSecondary",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInput-formControl",
+                            "fullWidth": "MuiInput-fullWidth",
+                            "input": "MuiInput-input",
+                            "inputMarginDense": "MuiInput-inputMarginDense",
+                            "inputMultiline": "MuiInput-inputMultiline",
+                            "inputTypeSearch": "MuiInput-inputTypeSearch",
+                            "marginDense": "MuiInput-marginDense",
+                            "multiline": "MuiInput-multiline",
+                            "root": "MuiInput-root",
+                            "underline": "MuiInput-underline",
+                          }
+                        }
+                        fullWidth={true}
+                        id="new-list-description"
+                        multiline={false}
+                        onChange={[Function]}
+                        type="text"
+                      >
+                        <WithStyles(ForwardRef(InputBase))
+                          autoFocus={false}
+                          classes={
+                            Object {
+                              "colorSecondary": "MuiInput-colorSecondary",
+                              "disabled": "Mui-disabled",
+                              "error": "Mui-error",
+                              "focused": "Mui-focused",
+                              "formControl": "MuiInput-formControl",
+                              "fullWidth": "MuiInput-fullWidth",
+                              "input": "MuiInput-input",
+                              "inputMarginDense": "MuiInput-inputMarginDense",
+                              "inputMultiline": "MuiInput-inputMultiline",
+                              "inputTypeSearch": "MuiInput-inputTypeSearch",
+                              "marginDense": "MuiInput-marginDense",
+                              "multiline": "MuiInput-multiline",
+                              "root": "MuiInput-root MuiInput-underline",
+                              "underline": null,
+                            }
+                          }
+                          fullWidth={true}
+                          id="new-list-description"
+                          inputComponent="input"
+                          multiline={false}
+                          onChange={[Function]}
+                          type="text"
+                        >
+                          <ForwardRef(InputBase)
+                            autoFocus={false}
+                            classes={
+                              Object {
+                                "adornedEnd": "MuiInputBase-adornedEnd",
+                                "adornedStart": "MuiInputBase-adornedStart",
+                                "colorSecondary": "MuiInputBase-colorSecondary MuiInput-colorSecondary",
+                                "disabled": "Mui-disabled Mui-disabled",
+                                "error": "Mui-error Mui-error",
+                                "focused": "Mui-focused Mui-focused",
+                                "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                                "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                                "input": "MuiInputBase-input MuiInput-input",
+                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                                "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                                "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                                "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                                "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                                "marginDense": "MuiInputBase-marginDense MuiInput-marginDense",
+                                "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                                "root": "MuiInputBase-root MuiInput-root MuiInput-underline",
+                              }
+                            }
+                            fullWidth={true}
+                            id="new-list-description"
+                            inputComponent="input"
+                            multiline={false}
+                            onChange={[Function]}
+                            type="text"
+                          >
+                            <div
+                              className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense"
+                              onClick={[Function]}
+                            >
+                              <input
+                                aria-invalid={false}
+                                autoFocus={false}
+                                className="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+                                disabled={false}
+                                id="new-list-description"
+                                onAnimationStart={[Function]}
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                required={false}
+                                type="text"
+                              />
+                            </div>
+                          </ForwardRef(InputBase)>
+                        </WithStyles(ForwardRef(InputBase))>
+                      </ForwardRef(Input)>
+                    </WithStyles(ForwardRef(Input))>
+                  </div>
+                </ForwardRef(FormControl)>
+              </WithStyles(ForwardRef(FormControl))>
+            </ForwardRef(TextField)>
+          </WithStyles(ForwardRef(TextField))>
+        </div>
+      </ForwardRef(DialogContent)>
+    </WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogActions))>
+      <ForwardRef(DialogActions)
+        classes={
+          Object {
+            "root": "MuiDialogActions-root",
+            "spacing": "MuiDialogActions-spacing",
+          }
+        }
+      >
+        <div
+          className="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <WithStyles(ForwardRef(Button))
+            color="primary"
+            onClick={[Function]}
+          >
+            <ForwardRef(Button)
+              classes={
+                Object {
+                  "colorInherit": "MuiButton-colorInherit",
+                  "contained": "MuiButton-contained",
+                  "containedPrimary": "MuiButton-containedPrimary",
+                  "containedSecondary": "MuiButton-containedSecondary",
+                  "containedSizeLarge": "MuiButton-containedSizeLarge",
+                  "containedSizeSmall": "MuiButton-containedSizeSmall",
+                  "disableElevation": "MuiButton-disableElevation",
+                  "disabled": "Mui-disabled",
+                  "endIcon": "MuiButton-endIcon",
+                  "focusVisible": "Mui-focusVisible",
+                  "fullWidth": "MuiButton-fullWidth",
+                  "iconSizeLarge": "MuiButton-iconSizeLarge",
+                  "iconSizeMedium": "MuiButton-iconSizeMedium",
+                  "iconSizeSmall": "MuiButton-iconSizeSmall",
+                  "label": "MuiButton-label",
+                  "outlined": "MuiButton-outlined",
+                  "outlinedPrimary": "MuiButton-outlinedPrimary",
+                  "outlinedSecondary": "MuiButton-outlinedSecondary",
+                  "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+                  "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+                  "root": "MuiButton-root",
+                  "sizeLarge": "MuiButton-sizeLarge",
+                  "sizeSmall": "MuiButton-sizeSmall",
+                  "startIcon": "MuiButton-startIcon",
+                  "text": "MuiButton-text",
+                  "textPrimary": "MuiButton-textPrimary",
+                  "textSecondary": "MuiButton-textSecondary",
+                  "textSizeLarge": "MuiButton-textSizeLarge",
+                  "textSizeSmall": "MuiButton-textSizeSmall",
+                }
+              }
+              color="primary"
+              onClick={[Function]}
+            >
+              <WithStyles(ForwardRef(ButtonBase))
+                className="MuiButton-root MuiButton-text MuiButton-textPrimary"
+                component="button"
+                disabled={false}
+                focusRipple={true}
+                focusVisibleClassName="Mui-focusVisible"
+                onClick={[Function]}
+                type="button"
+              >
+                <ForwardRef(ButtonBase)
+                  className="MuiButton-root MuiButton-text MuiButton-textPrimary"
+                  classes={
+                    Object {
+                      "disabled": "Mui-disabled",
+                      "focusVisible": "Mui-focusVisible",
+                      "root": "MuiButtonBase-root",
+                    }
+                  }
+                  component="button"
+                  disabled={false}
+                  focusRipple={true}
+                  focusVisibleClassName="Mui-focusVisible"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <button
+                    className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <span
+                      className="MuiButton-label"
+                    >
+                      Cancel
+                    </span>
+                    <WithStyles(memo)
+                      center={false}
+                    >
+                      <ForwardRef(TouchRipple)
+                        center={false}
+                        classes={
+                          Object {
+                            "child": "MuiTouchRipple-child",
+                            "childLeaving": "MuiTouchRipple-childLeaving",
+                            "childPulsate": "MuiTouchRipple-childPulsate",
+                            "ripple": "MuiTouchRipple-ripple",
+                            "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                            "rippleVisible": "MuiTouchRipple-rippleVisible",
+                            "root": "MuiTouchRipple-root",
+                          }
+                        }
+                      >
+                        <span
+                          className="MuiTouchRipple-root"
+                        >
+                          <TransitionGroup
+                            childFactory={[Function]}
+                            component={null}
+                            exit={true}
+                          />
+                        </span>
+                      </ForwardRef(TouchRipple)>
+                    </WithStyles(memo)>
+                  </button>
+                </ForwardRef(ButtonBase)>
+              </WithStyles(ForwardRef(ButtonBase))>
+            </ForwardRef(Button)>
+          </WithStyles(ForwardRef(Button))>
+          <WithStyles(ForwardRef(Button))
+            color="primary"
+            onClick={[Function]}
+          >
+            <ForwardRef(Button)
+              classes={
+                Object {
+                  "colorInherit": "MuiButton-colorInherit",
+                  "contained": "MuiButton-contained",
+                  "containedPrimary": "MuiButton-containedPrimary",
+                  "containedSecondary": "MuiButton-containedSecondary",
+                  "containedSizeLarge": "MuiButton-containedSizeLarge",
+                  "containedSizeSmall": "MuiButton-containedSizeSmall",
+                  "disableElevation": "MuiButton-disableElevation",
+                  "disabled": "Mui-disabled",
+                  "endIcon": "MuiButton-endIcon",
+                  "focusVisible": "Mui-focusVisible",
+                  "fullWidth": "MuiButton-fullWidth",
+                  "iconSizeLarge": "MuiButton-iconSizeLarge",
+                  "iconSizeMedium": "MuiButton-iconSizeMedium",
+                  "iconSizeSmall": "MuiButton-iconSizeSmall",
+                  "label": "MuiButton-label",
+                  "outlined": "MuiButton-outlined",
+                  "outlinedPrimary": "MuiButton-outlinedPrimary",
+                  "outlinedSecondary": "MuiButton-outlinedSecondary",
+                  "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+                  "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+                  "root": "MuiButton-root",
+                  "sizeLarge": "MuiButton-sizeLarge",
+                  "sizeSmall": "MuiButton-sizeSmall",
+                  "startIcon": "MuiButton-startIcon",
+                  "text": "MuiButton-text",
+                  "textPrimary": "MuiButton-textPrimary",
+                  "textSecondary": "MuiButton-textSecondary",
+                  "textSizeLarge": "MuiButton-textSizeLarge",
+                  "textSizeSmall": "MuiButton-textSizeSmall",
+                }
+              }
+              color="primary"
+              onClick={[Function]}
+            >
+              <WithStyles(ForwardRef(ButtonBase))
+                className="MuiButton-root MuiButton-text MuiButton-textPrimary"
+                component="button"
+                disabled={false}
+                focusRipple={true}
+                focusVisibleClassName="Mui-focusVisible"
+                onClick={[Function]}
+                type="button"
+              >
+                <ForwardRef(ButtonBase)
+                  className="MuiButton-root MuiButton-text MuiButton-textPrimary"
+                  classes={
+                    Object {
+                      "disabled": "Mui-disabled",
+                      "focusVisible": "Mui-focusVisible",
+                      "root": "MuiButtonBase-root",
+                    }
+                  }
+                  component="button"
+                  disabled={false}
+                  focusRipple={true}
+                  focusVisibleClassName="Mui-focusVisible"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <button
+                    className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <span
+                      className="MuiButton-label"
+                    >
+                      Save
+                    </span>
+                    <WithStyles(memo)
+                      center={false}
+                    >
+                      <ForwardRef(TouchRipple)
+                        center={false}
+                        classes={
+                          Object {
+                            "child": "MuiTouchRipple-child",
+                            "childLeaving": "MuiTouchRipple-childLeaving",
+                            "childPulsate": "MuiTouchRipple-childPulsate",
+                            "ripple": "MuiTouchRipple-ripple",
+                            "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                            "rippleVisible": "MuiTouchRipple-rippleVisible",
+                            "root": "MuiTouchRipple-root",
+                          }
+                        }
+                      >
+                        <span
+                          className="MuiTouchRipple-root"
+                        >
+                          <TransitionGroup
+                            childFactory={[Function]}
+                            component={null}
+                            exit={true}
+                          />
+                        </span>
+                      </ForwardRef(TouchRipple)>
+                    </WithStyles(memo)>
+                  </button>
+                </ForwardRef(ButtonBase)>
+              </WithStyles(ForwardRef(ButtonBase))>
+            </ForwardRef(Button)>
+          </WithStyles(ForwardRef(Button))>
+        </div>
+      </ForwardRef(DialogActions)>
+    </WithStyles(ForwardRef(DialogActions))>
+  </div>
+</AddToFavoritesDialogForm>
+`;

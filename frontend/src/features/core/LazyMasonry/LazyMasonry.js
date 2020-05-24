@@ -1,8 +1,8 @@
+import {makeStyles} from '@material-ui/core';
+import PropTypes from 'prop-types';
 import React from 'react';
 import InfiniteLoader from 'react-infinite-loader';
 import Masonry from 'react-masonry-css';
-import { makeStyles } from '@material-ui/core';
-import PropTypes from 'prop-types';
 
 const useStyles = makeStyles({
   grid: {

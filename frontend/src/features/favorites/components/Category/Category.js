@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import Paper from '@material-ui/core/Paper'
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import Paper from '@material-ui/core/Paper'
+import {makeStyles} from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import EditIcon from '@material-ui/icons/Edit';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import React, {useState} from 'react';
 import LazyMasonry from '../../../core/LazyMasonry/LazyMasonry';
 import PhotoTile from '../../../core/PhotoTile/PhotoTile';
-import Dialog from '@material-ui/core/Dialog';
 import UpdateCategoryDialogForm from '../UpdateCategoryDialogForm/UpdateCategoryDialogForm';
 
 const useStyles = makeStyles((theme) => ({
@@ -99,8 +99,8 @@ const Category = ({name, description, onUpdateCategory, favorites, cols}) => {
 Category.propTypes = {
   cols: PropTypes.number,
   onUpdateCategory: PropTypes.func,
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  description: PropTypes.string,
   favorites: PropTypes.arrayOf(PropTypes.object)
 };
 

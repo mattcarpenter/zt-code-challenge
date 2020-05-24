@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import axios from 'axios';
 
 export const initialState = {
@@ -6,14 +6,14 @@ export const initialState = {
   page: 0,
   total: 0,
   totalPages: 0,
-  query: null,
+  query: '',
   loading: false
 };
 
 export const searchImages = createAsyncThunk(
   'imageSearch/searchImages',
   async ({query, perPage = 10}) => {
-    const response = await axios.get('/api/mock', {params: { query, perPage } });
+    const response = await axios.get('/api/search', {params: { query, perPage } });
     return { ...response.data, query: query };
   }
 );
@@ -23,7 +23,7 @@ export const loadMoreImages = createAsyncThunk(
   async (params, { getState }) => {
     const pageToFetch = getState().imageSearch.page + 1;
     const query = getState().imageSearch.query;
-    const response = await axios.get('/api/mock', {params: { query, page: pageToFetch } });
+    const response = await axios.get('/api/search', {params: { query, page: pageToFetch, perPage: params.perPage } });
     return { ...response.data, page: pageToFetch };
   },
   {

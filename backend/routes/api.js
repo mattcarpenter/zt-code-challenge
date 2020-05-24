@@ -3,7 +3,6 @@ const { check, validationResult } = require('express-validator');
 const router = express.Router();
 const unsplashService = require('../services/unsplash');
 const config = require('../config');
-const fs = require('fs');
 
 router.get('/search', [
   check('query').exists(),
@@ -17,34 +16,30 @@ router.get('/search', [
   }
 
   try {
-    const results = await unsplashService.search(
+    const serviceResponse = await unsplashService.search(
       req.query.query,
       config.getUnsplashAccessKey(),
       req.query.page,
       req.query.perPage
     );
 
-    res.send(results);
+    serviceResponse.results = serviceResponse.results.map(r => {
+      return {
+        id: r.id,
+        thumbnailURL: r.urls.small,
+        downloadURL: r.links.download,
+        profileImageURL: r.user.profile_image.small,
+        profileURL: r.user.links.html,
+        profileUserName: r.user.name,
+        originalWidth: r.width,
+        originalHeight: r.height
+      }
+    });
+
+    res.send(serviceResponse);
   } catch (e) {
     next(e);
   }
-});
-
-router.get('/mock', (req, res) => {
-  const mockResponse = JSON.parse(fs.readFileSync(__dirname + '/kittens.json').toString());
-  mockResponse.results = mockResponse.results.map(r => {
-    return {
-      id: r.id,
-      thumbnailURL: r.urls.small,
-      downloadURL: r.links.download,
-      profileImageURL: r.user.profile_image.small,
-      profileURL: r.user.links.html,
-      profileUserName: r.user.name,
-      originalWidth: r.width,
-      originalHeight: r.height
-    }
-  });
-  res.send(mockResponse);
 });
 
 module.exports = router;

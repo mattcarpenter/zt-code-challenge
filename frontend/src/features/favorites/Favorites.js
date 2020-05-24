@@ -1,13 +1,19 @@
-import React from 'react';
-import { useSelector, useDispatch} from 'react-redux';
-import { selectCategories, selectFavorites, updateCategory } from './favoritesSlice';
-import { makeStyles } from '@material-ui/core/styles';
-import Category from './components/Category/Category';
+import {makeStyles} from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
+import React from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+import Category from './components/Category/Category';
+import {selectCategories, selectFavorites, updateCategory} from './favoritesSlice';
 
 const useStyles = makeStyles({
   root: {
     marginTop: 20
+  },
+  nothingHere: {
+    textAlign: 'center',
+    padding: 50,
+    color: '#ddd'
   }
 });
 
@@ -23,6 +29,11 @@ const Favorites = ({cols}) => {
 
   return (
     <div className={classes.root}>
+      { categories.length === 0 && (
+        <div className={classes.nothingHere}>
+          <Typography variant="h6" tag="h2">You haven't created any lists yet!</Typography>
+        </div>
+      )}
       { categories.map(category => (
         <Category
           cols={cols}

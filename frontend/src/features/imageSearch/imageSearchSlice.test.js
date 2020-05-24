@@ -1,7 +1,7 @@
-import reducer, {searchImages, loadMoreImages, setFavoritesModalOpen, initialState} from './imageSearchSlice';
+import moxios from 'moxios';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import moxios from 'moxios';
+import reducer, {initialState, loadMoreImages, searchImages} from './imageSearchSlice';
 
 const mockStore = configureStore([thunk]);
 

@@ -1,6 +1,6 @@
-import reducer, { initialState, saveToFavorites, updateCategory } from './favoritesSlice';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
+import reducer, {initialState, saveToFavorites, updateCategory} from './favoritesSlice';
 
 const mockStore = configureStore([thunk]);
 

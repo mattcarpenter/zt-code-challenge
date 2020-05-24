@@ -1,12 +1,17 @@
+import {mount} from 'enzyme';
 import React from 'react';
-import { mount } from 'enzyme';
 import AddToFavoritesDialogForm from './AddToFavoritesDialogForm';
 
 const categories = [ { id: 'a', name: 'a' }, { id: 'b', name: 'b' } ];
 
 describe('AddToFavoritesDialogForm', () => {
 
-  it('renders correctly', () => {
+  it('renders correctly when no categories', () => {
+    const wrapper = mount(<AddToFavoritesDialogForm />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders correctly categories exist', () => {
     const wrapper = mount(<AddToFavoritesDialogForm categories={categories} />);
     expect(wrapper).toMatchSnapshot();
   });
