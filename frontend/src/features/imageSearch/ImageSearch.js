@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchImages, selectImages, loadMoreImages } from './imageSearchSlice';
 import LazyMasonry from '../common/LazyMasonry/LazyMasonry';
@@ -27,8 +27,12 @@ export default function ImageSearch() {
             key={image.id}
             id={image.id}
             thumbnailURL={image.urls.small}
+            profileImageURL={image.user.profile_image.small}
+            profileURL={image.user.links.html}
+            profileUsername={image.user.name}
             originalWidth={image.width}
             originalHeight={image.height}
+            canFavorite={true}
           />
         ))}
       </LazyMasonry>

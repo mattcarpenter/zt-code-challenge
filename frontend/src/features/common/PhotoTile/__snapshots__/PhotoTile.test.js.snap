@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PhotoTile properly renders 1`] = `
+exports[`PhotoTile component properly renders 1`] = `
 <SizeMe(PhotoTile)
-  id="abc"
+  id="def"
   originalHeight={1500}
   originalWidth={2000}
   size={
@@ -10,12 +10,12 @@ exports[`PhotoTile properly renders 1`] = `
       "width": 200,
     }
   }
-  thumbnailURL="http://fake.com/image.jpg"
+  thumbnailURL="abc"
 >
   <SizeMeRenderer(PhotoTile)
     disablePlaceholder={false}
     explicitRef={[Function]}
-    id="abc"
+    id="def"
     originalHeight={1500}
     originalWidth={2000}
     size={
@@ -23,11 +23,11 @@ exports[`PhotoTile properly renders 1`] = `
         "width": 200,
       }
     }
-    thumbnailURL="http://fake.com/image.jpg"
+    thumbnailURL="abc"
   >
     <SizeMeReferenceWrapper>
       <PhotoTile
-        id="abc"
+        id="def"
         originalHeight={1500}
         originalWidth={2000}
         size={
@@ -35,7 +35,7 @@ exports[`PhotoTile properly renders 1`] = `
             "width": 200,
           }
         }
-        thumbnailURL="http://fake.com/image.jpg"
+        thumbnailURL="abc"
       >
         <div
           style={
@@ -46,7 +46,7 @@ exports[`PhotoTile properly renders 1`] = `
         >
           <img
             height={150}
-            src="http://fake.com/image.jpg"
+            src="abc"
             width={200}
           />
         </div>

@@ -10,10 +10,7 @@ describe('debouncingTextBox', () => {
   });
 
   it('debounces user input and calls onChange prop method', done => {
-    let callCount = 0;
-    let value;
-    const handleChange = (v) => {callCount++; value = v};
-
+    const handleChange = jest.fn();
     const wrapper = mount(
       <DebouncingTextField onChange={handleChange} />
     );
@@ -24,8 +21,8 @@ describe('debouncingTextBox', () => {
     input.simulate('change', { target: { value: 'abc' } });
 
     setTimeout(function () {
-      expect(callCount).toEqual(1);
-      expect(value).toEqual('abc');
+      expect(handleChange.mock.calls.length).toBe(1);
+      expect(handleChange.mock.calls[0][0]).toBe('abc');
       done();
     }, 300);
   });
