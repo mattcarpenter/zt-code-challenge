@@ -1,7 +1,7 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 import {v4 as uuidv4} from 'uuid';
 
-const initialState = {
+export const initialState = {
   categories: [],
   favorites: {}
 };
@@ -15,7 +15,7 @@ export const saveToFavorites = createAsyncThunk(
     // implementation in the future.
 
     const payload = {imageId, categories};
-    if (newCategoryName.trim()) {
+    if (newCategoryName && newCategoryName.trim()) {
       payload.newCategory = {
         name: newCategoryName,
         description: newCategoryDescription,
