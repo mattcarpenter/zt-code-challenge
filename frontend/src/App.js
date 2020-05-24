@@ -1,11 +1,10 @@
-import React from 'react';
+import {isWidthDown, withWidth} from '@material-ui/core';
 import Container from '@material-ui/core/Container';
-import { withWidth, isWidthDown } from '@material-ui/core';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ImageSearch from './features/imageSearch/ImageSearch';
-import Favorites from './features/favorites/Favorites';
-import './App.css';
+import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NavigationBar from './features/core/NavigationBar/NavigationBar';
+import Favorites from './features/favorites/Favorites';
+import ImageSearch from './features/imageSearch/ImageSearch';
 
 function App({width}) {
   const isSmallScreen = isWidthDown('sm', width);
