@@ -15,17 +15,17 @@ const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
   const [ newCategoryName, setNewCategoryName ] = useState('');
   const [ newCategoryDescription, setNewCategoryDescription ] = useState('');
 
-  function handleCheckboxChange(id, checked) {
+  const handleCheckboxChange = (id, checked) => {
     setSelectedCategoryIds({ ...selectedCategoryIds, [id]: checked })
-  }
+  };
 
-  function handleSaveClicked() {
+  const handleSaveClicked = () => {
     onSave({
       categories: Object.keys(selectedCategoryIds).filter(id => selectedCategoryIds[id]),
       newCategoryName,
       newCategoryDescription
     });
-  }
+  };
 
   return (
     <div>

@@ -33,34 +33,26 @@ const ImageSearch = ({cols}) => {
   const dispatch = useDispatch();
   const classes = useStyles();
 
-  function loadMoreItems() {
-    dispatch(loadMoreImages({ perPage: 50 }));
-  }
-
-  function handleSearch(query) {
-    dispatch(searchImages({ query, perPage: 100 }));
-  }
-
-  function handleDialogOnSave(categories) {
+  const handleDialogOnSave = (categories) => {
     setAddToFavoritesDialogOpen(false);
     dispatch(saveToFavorites({ ...categories, image: imageToAddToFavorites }));
-  }
+  };
 
-  function handlePhotoOnFavorite(image) {
+  const handlePhotoOnFavorite = (image) => {
     setImageToAddToFavorites(image);
     setAddToFavoritesDialogOpen(true);
-  }
+  };
 
   return (
     <div className={classes.root}>
       <div className={classes.search}>
         <DebouncingInputBox
           placeholder="Start typing to begin a search..."
-          onChange={handleSearch}
+          onChange={(query) => dispatch(searchImages({ query, perPage: 100 }))}
           className={classes.input}
         />
       </div>
-      <LazyMasonry loadMoreItems={loadMoreItems} cols={cols} loading={loading}>
+      <LazyMasonry loadMoreItems={() => dispatch(loadMoreImages({ perPage: 50 }))} cols={cols} loading={loading}>
         {images.map(image => (
           <PhotoTile
             key={image.id}

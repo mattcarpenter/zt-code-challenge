@@ -9,9 +9,20 @@ import React, {useState} from 'react';
 const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
   const [ newCategoryName, setNewCategoryName ] = useState(name);
   const [ newCategoryDescription, setNewCategoryDescription ] = useState(description);
+  const [ errorText, setErrorText ] = useState(null);
 
   function handleSaveClicked() {
+    if (newCategoryName.trim() === '') {
+      setErrorText('Please enter a category name');
+      return;
+    }
+
     onSave(newCategoryName, newCategoryDescription);
+  }
+
+  function handleCategoryNameTextFieldChange(e) {
+    setNewCategoryName(e.target.value);
+    setErrorText(null);
   }
 
   return (
@@ -24,8 +35,10 @@ const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
           id="list-name"
           label="List Name"
           type="text"
+          helperText={errorText}
+          error={errorText !== null}
           fullWidth
-          onChange={(e) => setNewCategoryName(e.target.value)}
+          onChange={handleCategoryNameTextFieldChange}
         />
         <TextField
           value={newCategoryDescription}

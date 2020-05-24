@@ -8,13 +8,14 @@ import {useHistory} from 'react-router-dom';
 const NavigationBar = ({navIndex}) => {
   const history = useHistory();
 
-  function onChange(event, index) {
-    history.push(index === 0 ? '/' : '/favorites');
-  }
-
   return (
     <AppBar position="static">
-      <Tabs value={navIndex} onChange={onChange} aria-label="navigation" role="navigation">
+      <Tabs
+        value={navIndex}
+        aria-label="navigation"
+        role="navigation"
+        onChange={(event, index) => history.push(index === 0 ? '/' : '/favorites')}
+      >
         <Tab label="Search" id="search" />
         <Tab label="Favorites" />
       </Tabs>

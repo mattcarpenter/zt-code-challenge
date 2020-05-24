@@ -38,10 +38,10 @@ const Category = ({name, description, onUpdateCategory, favorites, cols}) => {
   const [ editDialogOpen, setEditDialogOpen ] = useState(false);
   const classes = useStyles();
 
-  function handleUpdateCategory(newName, newDescription) {
+  const handleUpdateCategory = (newName, newDescription) => {
     onUpdateCategory(newName, newDescription);
     setEditDialogOpen(false);
-  }
+  };
 
   return (
     <Paper className={classes.root}>

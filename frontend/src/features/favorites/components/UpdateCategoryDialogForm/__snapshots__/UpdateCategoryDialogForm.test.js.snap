@@ -91,7 +91,9 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
           className="MuiDialogContent-root MuiDialogContent-dividers"
         >
           <WithStyles(ForwardRef(TextField))
+            error={false}
             fullWidth={true}
+            helperText={null}
             id="list-name"
             label="List Name"
             margin="dense"
@@ -105,7 +107,9 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                   "root": "MuiTextField-root",
                 }
               }
+              error={false}
               fullWidth={true}
+              helperText={null}
               id="list-name"
               label="List Name"
               margin="dense"

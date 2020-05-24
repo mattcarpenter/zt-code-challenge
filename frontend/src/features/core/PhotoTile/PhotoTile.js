@@ -78,13 +78,14 @@ const PhotoTile = ({ id, thumbnailURL, profileImageURL, profileUserName, origina
   const scaledHeight = calculateScaledHeight(originalWidth, originalHeight, size.width);
   const classes = useStyles();
 
-  function handleDownloadClick() {
+  const handleDownloadClick = () => {
+    // tricks the browser into initiating a download for this resource
     var anchor = document.createElement('a');
     anchor.href = downloadURL;
     anchor.target = '_blank';
     anchor.download = id;
     anchor.click();
-  }
+  };
 
   return (
     <div style={{ height: scaledHeight }} className={classes.root}>
