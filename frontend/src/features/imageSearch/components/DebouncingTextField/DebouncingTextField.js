@@ -2,7 +2,36 @@ import {TextField} from '@material-ui/core'
 import PropTypes from 'prop-types';
 import React from 'react'
 
-const DebouncingTextField = ({label, value, debounceTime, onChange, placeholder, className, onFocus}) => {
+const DebouncingTextField = ({
+ /**
+  * Input field label
+  */
+ label,
+ /**
+  * Input field value
+  */
+ value,
+ /**
+  * Debounce threshold in milliseconds
+  */
+ debounceTime,
+ /**
+  * Callback function invoked {debounceTime} milliseconds after user input
+  */
+ onChange,
+ /**
+  * Input field placeholder text
+  */
+ placeholder,
+ /**
+  * CSS class name
+  */
+ className,
+ /**
+  * Callback function invoked when the text input receives focus
+  */
+ onFocus
+}) => {
 
   const handleChange = debounceEvent((value) => {
     onChange(value);

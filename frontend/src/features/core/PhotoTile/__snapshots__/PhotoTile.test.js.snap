@@ -46,6 +46,7 @@ exports[`PhotoTile component properly renders 1`] = `
           }
         >
           <img
+            alt=""
             className="makeStyles-image-2"
             height={150}
             src="abc"

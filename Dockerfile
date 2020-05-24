@@ -1,25 +1,20 @@
-FROM node:12.16.3-alpine AS base
+FROM node:12.16.3-alpine
 
 RUN mkdir -p /app/backend
 RUN mkdir -p /app/frontend
 
 WORKDIR /app/backend
-COPY ./backend/package.json /app/backend/
-COPY ./backend/package-lock.json /app/backend/
+COPY ./backend/. /app/backend/
 RUN npm install
 
 WORKDIR /app/frontend
-COPY ./frontend/package.json /app/frontend/
-COPY ./frontend/package-lock.json /app/frontend/
-RUN npm install
-
-FROM base AS release
-
 COPY ./frontend/. /app/frontend/
+RUN npm install
 RUN npm run build
+RUN cp -r ./build/. /app/backend/public/
 
-WORKDIR /app/backend/
-COPY ./backend/. /app/backend/
-COPY ./frontend/build/. /app/backend/public/
+WORKDIR /app/backend
+
+EXPOSE 4900
 
 CMD ["npm", "start"]

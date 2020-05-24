@@ -23,7 +23,12 @@ const useStyles = makeStyles({
   }
 });
 
-const ImageSearch = ({cols}) => {
+const ImageSearch = ({
+ /**
+  * Number of columns to arrange photo tiles in to
+  */
+  cols
+}) => {
   const [ addToFavoritesDialogOpen, setAddToFavoritesDialogOpen ] = useState(false);
   const [ imageToAddToFavorites, setImageToAddToFavorites ] = useState();
 
@@ -90,6 +95,10 @@ const ImageSearch = ({cols}) => {
 
 ImageSearch.propTypes = {
   cols: PropTypes.number
+};
+
+ImageSearch.propDefaults = {
+  cols: 3
 };
 
 export default ImageSearch;
