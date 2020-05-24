@@ -69,10 +69,18 @@ const useStyles = makeStyles({
   }
 });
 
-const PhotoTile = ({ thumbnailURL, profileImageURL, profileUsername, originalWidth,
-                     originalHeight, canFavorite, size, profileURL, onFavorite, onDownload }) => {
+const PhotoTile = ({ id, thumbnailURL, profileImageURL, profileUserName, originalWidth,
+                     originalHeight, canFavorite, size, profileURL, onFavorite, downloadURL }) => {
   const scaledHeight = calculateScaledHeight(originalWidth, originalHeight, size.width);
   const classes = useStyles();
+
+  function handleDownloadClick() {
+    var anchor = document.createElement('a');
+    anchor.href = downloadURL;
+    anchor.target = '_blank';
+    anchor.download = id;
+    anchor.click();
+  }
 
   return (
     <div style={{ height: scaledHeight }} className={classes.root}>
@@ -84,7 +92,7 @@ const PhotoTile = ({ thumbnailURL, profileImageURL, profileUsername, originalWid
         <div className={classes.meta}>
           <a href={profileURL} target="_BLANK" className={classes.profileLink} rel="noopener noreferrer">
             <img src={profileImageURL} className={classes.profileImage} />
-            { profileUsername }
+            { profileUserName }
           </a>
         </div>
         <div className={classes.actions}>
@@ -100,7 +108,7 @@ const PhotoTile = ({ thumbnailURL, profileImageURL, profileUsername, originalWid
           )}
           <Button
             aria-label="Download Image"
-            onClick={onDownload}
+            onClick={handleDownloadClick}
             variant="contained"
             className={classes.button}
             color="default">
@@ -113,20 +121,20 @@ const PhotoTile = ({ thumbnailURL, profileImageURL, profileUsername, originalWid
 };
 
 PhotoTile.propTypes = {
+  id: PropTypes.string.isRequired,
   profileURL: PropTypes.string,
   thumbnailURL: PropTypes.string.isRequired,
   profileImageURL: PropTypes.string,
-  profileUsername: PropTypes.string,
+  downloadURL: PropTypes.string,
+  profileUserName: PropTypes.string,
   originalWidth: PropTypes.number.isRequired,
   originalHeight: PropTypes.number.isRequired,
   canFavorite: PropTypes.bool,
-  onFavorite: PropTypes.func,
-  onDownload: PropTypes.func
+  onFavorite: PropTypes.func
 };
 
 PhotoTile.defautProps = {
-  onFavorite: () => {},
-  onDownload: () => {}
+  onFavorite: () => {}
 };
 
 export default withSize()(PhotoTile);

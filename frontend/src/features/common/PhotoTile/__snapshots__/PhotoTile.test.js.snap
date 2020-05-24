@@ -74,6 +74,7 @@ exports[`PhotoTile component properly renders 1`] = `
                 aria-label="Download Image"
                 className="makeStyles-button-7"
                 color="default"
+                onClick={[Function]}
                 variant="contained"
               >
                 <ForwardRef(Button)
@@ -113,6 +114,7 @@ exports[`PhotoTile component properly renders 1`] = `
                     }
                   }
                   color="default"
+                  onClick={[Function]}
                   variant="contained"
                 >
                   <WithStyles(ForwardRef(ButtonBase))
@@ -122,6 +124,7 @@ exports[`PhotoTile component properly renders 1`] = `
                     disabled={false}
                     focusRipple={true}
                     focusVisibleClassName="Mui-focusVisible"
+                    onClick={[Function]}
                     type="button"
                   >
                     <ForwardRef(ButtonBase)
@@ -138,6 +141,7 @@ exports[`PhotoTile component properly renders 1`] = `
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
+                      onClick={[Function]}
                       type="button"
                     >
                       <button
@@ -145,6 +149,7 @@ exports[`PhotoTile component properly renders 1`] = `
                         className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7"
                         disabled={false}
                         onBlur={[Function]}
+                        onClick={[Function]}
                         onDragLeave={[Function]}
                         onFocus={[Function]}
                         onKeyDown={[Function]}

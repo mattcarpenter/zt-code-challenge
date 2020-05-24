@@ -32,6 +32,18 @@ router.get('/search', [
 
 router.get('/mock', (req, res) => {
   const mockResponse = JSON.parse(fs.readFileSync(__dirname + '/kittens.json').toString());
+  mockResponse.results = mockResponse.results.map(r => {
+    return {
+      id: r.id,
+      thumbnailURL: r.urls.small,
+      downloadURL: r.links.download,
+      profileImageURL: r.user.profile_image.small,
+      profileURL: r.user.links.html,
+      profileUserName: r.user.name,
+      originalWidth: r.width,
+      originalHeight: r.height
+    }
+  });
   res.send(mockResponse);
 });
 

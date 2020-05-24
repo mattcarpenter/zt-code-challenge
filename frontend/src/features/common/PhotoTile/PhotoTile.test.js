@@ -37,23 +37,6 @@ describe('PhotoTile', () => {
       expect(onFavorite.mock.calls.length).toBe(1);
     });
 
-    it('calls the onDownload method when the Add to Favorites button is clicked', () => {
-      const onDownload = jest.fn();
-      const wrapper = mount(
-        <PhotoTile
-          size={{width: 200}}
-          originalWidth={2000}
-          originalHeight={1500}
-          onDownload={onDownload}
-          thumbnailURL="abc"
-          id="def"
-          canFavorite={true}
-        />
-      );
-      wrapper.find('button').find({'aria-label':'Download Image'}).simulate('click');
-      expect(onDownload.mock.calls.length).toBe(1);
-    });
-
   });
 
   describe('calculateScaledHeight', () => {

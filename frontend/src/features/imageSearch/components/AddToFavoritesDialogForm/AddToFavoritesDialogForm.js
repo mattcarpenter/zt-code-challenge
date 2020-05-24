@@ -10,7 +10,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import PropTypes from 'prop-types';
 
-const AddToFavoritesDialogForm = ({open, onClose, categories, onSave}) => {
+const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
   const [ selectedCategoryIds, setSelectedCategoryIds ]  = useState({});
   const [ newCategoryName, setNewCategoryName ] = useState('');
   const [ newCategoryDescription, setNewCategoryDescription ] = useState('');
@@ -86,7 +86,6 @@ const AddToFavoritesDialogForm = ({open, onClose, categories, onSave}) => {
 
 
 AddToFavoritesDialogForm.propTypes = {
-  open: PropTypes.bool,
   onClose: PropTypes.func,
   categories: PropTypes.arrayOf(PropTypes.object),
   onSave: PropTypes.func

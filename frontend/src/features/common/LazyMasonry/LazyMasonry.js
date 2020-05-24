@@ -38,4 +38,9 @@ LazyMasonry.propTypes = {
   loadMoreItems: PropTypes.func
 };
 
+LazyMasonry.defaultProps = {
+  cols: 2,
+  loadMoreItems: () => {}
+};
+
 export default LazyMasonry;

@@ -1,12 +1,15 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
 import ImageSearch from './features/imageSearch/ImageSearch';
+import Favorites from './features/favorites/Favorites';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <ImageSearch/>
-    </div>
+    <Container>
+      {/*<ImageSearch/>*/}
+      <Favorites />
+    </Container>
   );
 }
 

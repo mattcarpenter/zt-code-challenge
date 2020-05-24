@@ -10,7 +10,7 @@ import AddToFavoritesDialogForm from './components/AddToFavoritesDialogForm/AddT
 
 export default function ImageSearch() {
   const [ addToFavoritesDialogOpen, setAddToFavoritesDialogOpen ] = useState(false);
-  const [ imageIdToAddToFavorites, setImageIdToAddToFavorites ] = useState();
+  const [ imageToAddToFavorites, setImageToAddToFavorites ] = useState();
 
   const images = useSelector(selectImages);
   const categories = useSelector(selectCategories);
@@ -27,11 +27,11 @@ export default function ImageSearch() {
 
   function handleDialogOnSave(categories) {
     setAddToFavoritesDialogOpen(false);
-    dispatch(saveToFavorites({ ...categories, imageId: imageIdToAddToFavorites}));
+    dispatch(saveToFavorites({ ...categories, image: imageToAddToFavorites }));
   }
 
-  function handlePhotoOnFavorite(id) {
-    setImageIdToAddToFavorites(id);
+  function handlePhotoOnFavorite(image) {
+    setImageToAddToFavorites(image);
     setAddToFavoritesDialogOpen(true);
   }
 
@@ -43,14 +43,15 @@ export default function ImageSearch() {
           <PhotoTile
             key={image.id}
             id={image.id}
-            thumbnailURL={image.urls.small}
-            profileImageURL={image.user.profile_image.small}
-            profileURL={image.user.links.html}
-            profileUsername={image.user.name}
-            originalWidth={image.width}
-            originalHeight={image.height}
+            thumbnailURL={image.thumbnailURL}
+            profileImageURL={image.profileImageURL}
+            downloadURL={image.downloadURL}
+            profileURL={image.profileURL}
+            profileUserName={image.profileUserName}
+            originalWidth={image.originalWidth}
+            originalHeight={image.originalHeight}
             canFavorite={true}
-            onFavorite={() => handlePhotoOnFavorite(image.id)}
+            onFavorite={() => handlePhotoOnFavorite(image)}
           />
         ))}
       </LazyMasonry>
