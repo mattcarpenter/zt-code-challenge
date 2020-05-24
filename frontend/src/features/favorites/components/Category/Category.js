@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const Category = ({name, description, onUpdateCategory, favorites}) => {
+const Category = ({name, description, onUpdateCategory, favorites, cols}) => {
   const [ editDialogOpen, setEditDialogOpen ] = useState(false);
   const classes = useStyles();
 
@@ -63,7 +63,7 @@ const Category = ({name, description, onUpdateCategory, favorites}) => {
         </div>
       </div>
       <div className={classes.masonryContainer}>
-        <LazyMasonry cols={3}>
+        <LazyMasonry cols={cols}>
           {favorites.map(image => (
             <PhotoTile
               key={image.id}
@@ -97,6 +97,7 @@ const Category = ({name, description, onUpdateCategory, favorites}) => {
 };
 
 Category.propTypes = {
+  cols: PropTypes.number,
   onUpdateCategory: PropTypes.func,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

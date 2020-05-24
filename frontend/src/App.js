@@ -9,6 +9,7 @@ import NavigationBar from './features/core/NavigationBar/NavigationBar';
 
 function App({width}) {
   const isSmallScreen = isWidthDown('sm', width);
+  const imageGridColumns = isSmallScreen ? 2 : 3;
 
   return (
     <Container fixed disableGutters={isSmallScreen}>
@@ -16,11 +17,11 @@ function App({width}) {
         <Switch>
           <Route path="/favorites">
             <NavigationBar navIndex={1} />
-            <Favorites />
+            <Favorites cols={imageGridColumns} />
           </Route>
           <Route path="/">
             <NavigationBar navIndex={0} />
-            <ImageSearch cols={isSmallScreen ? 2 : 3}/>
+            <ImageSearch cols={imageGridColumns}/>
           </Route>
         </Switch>
       </Router>

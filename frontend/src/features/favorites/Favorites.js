@@ -3,6 +3,7 @@ import { useSelector, useDispatch} from 'react-redux';
 import { selectCategories, selectFavorites, updateCategory } from './favoritesSlice';
 import { makeStyles } from '@material-ui/core/styles';
 import Category from './components/Category/Category';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles({
   root: {
@@ -10,7 +11,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function Favorites() {
+const Favorites = ({cols}) => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const favorites =  useSelector(selectFavorites);
@@ -24,6 +25,7 @@ export default function Favorites() {
     <div className={classes.root}>
       { categories.map(category => (
         <Category
+          cols={cols}
           key={category.id}
           name={category.name}
           description={category.description}
@@ -33,7 +35,13 @@ export default function Favorites() {
       ))}
     </div>
   );
-}
+};
+
+Favorites.propTypes = {
+  cols: PropTypes.number
+};
+
+export default Favorites;
 
 export const bucketFavorites = (categories, favorites) => {
   const categoriesMap = categories.reduce((acc, curr) => {
