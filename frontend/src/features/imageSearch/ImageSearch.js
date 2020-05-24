@@ -8,7 +8,7 @@ import PhotoTile from '../core/PhotoTile/PhotoTile';
 import {saveToFavorites, selectCategories} from '../favorites/favoritesSlice';
 import AddToFavoritesDialogForm from './components/AddToFavoritesDialogForm/AddToFavoritesDialogForm';
 import DebouncingInputBox from './components/DebouncingTextField/DebouncingTextField';
-import {loadMoreImages, searchImages, selectImages, selectLoading, selectQuery} from './imageSearchSlice';
+import {loadMoreImages, searchImages, selectImages, selectLoading} from './imageSearchSlice';
 
 const useStyles = makeStyles({
   root: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     paddingBottom: 15
   },
   search: {
-    padding: '20px 20px 10px 20px'
+    padding: '25px 20px 10px 20px'
   }
 });
 

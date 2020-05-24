@@ -11,19 +11,19 @@ const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
   const [ newCategoryDescription, setNewCategoryDescription ] = useState(description);
   const [ errorText, setErrorText ] = useState(null);
 
-  function handleSaveClicked() {
+  const handleSaveClicked = () => {
     if (newCategoryName.trim() === '') {
       setErrorText('Please enter a category name');
       return;
     }
 
     onSave(newCategoryName, newCategoryDescription);
-  }
+  };
 
-  function handleCategoryNameTextFieldChange(e) {
+  const handleCategoryNameTextFieldChange = (e) => {
     setNewCategoryName(e.target.value);
     setErrorText(null);
-  }
+  };
 
   return (
     <div>
@@ -37,6 +37,7 @@ const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
           type="text"
           helperText={errorText}
           error={errorText !== null}
+          maxLenth={64}
           fullWidth
           onChange={handleCategoryNameTextFieldChange}
         />
@@ -46,6 +47,7 @@ const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
           id="list-description"
           label="List Description"
           type="text"
+          maxLength={256}
           fullWidth
           onChange={(e) => setNewCategoryDescription(e.target.value)}
         />

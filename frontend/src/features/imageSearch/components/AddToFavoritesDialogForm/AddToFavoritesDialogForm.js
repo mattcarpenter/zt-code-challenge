@@ -60,6 +60,7 @@ const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
           id="new-list-name"
           label="New List Name"
           type="text"
+          maxLength={64}
           fullWidth
           onChange={(e) => setNewCategoryName(e.target.value)}
         />
@@ -68,6 +69,7 @@ const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
           id="new-list-description"
           label="List Description"
           type="text"
+          maxLength={256}
           fullWidth
           onChange={(e) => setNewCategoryDescription(e.target.value)}
         />
