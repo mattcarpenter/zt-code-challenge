@@ -1,13 +1,27 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
+import { Provider } from 'react-redux';
+import configureStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
 import ImageSearch from './ImageSearch';
-import LazyMasonry from '../common/LazyMasonry/LazyMasonry';
+
+const mockStore = configureStore([thunk]);
 
 describe('imageSearch', () => {
+  let store;
 
-  xit('renders an image grid', () => {
-    const wrapper = mount(<ImageSearch/>);
-    expect(wrapper.exists(LazyMasonry)).toBe(true);
+  beforeEach(() => {
+    store = mockStore({});
+  });
+
+  it('renders correctly', () => {
+    const wrapper = shallow(
+      <Provider store={store}>
+        <ImageSearch/>
+      </Provider>
+    );
+    
+    expect(wrapper).toMatchSnapshot();
   });
 
 });

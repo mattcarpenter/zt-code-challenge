@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchImages, selectImages, loadMoreImages } from './imageSearchSlice';
-import { selectCategories } from '../favorites/favoritesSlice';
+import { selectCategories, saveToFavorites } from '../favorites/favoritesSlice';
 import LazyMasonry from '../common/LazyMasonry/LazyMasonry';
 import DebouncingInputBox from './components/DebouncingTextField/DebouncingTextField';
 import PhotoTile from '../common/PhotoTile/PhotoTile';
@@ -26,7 +26,8 @@ export default function ImageSearch() {
   }
 
   function handleDialogOnSave(categories) {
-    debugger;
+    setAddToFavoritesDialogOpen(false);
+    dispatch(saveToFavorites({ ...categories, imageId: imageIdToAddToFavorites}));
   }
 
   function handlePhotoOnFavorite(id) {
@@ -64,8 +65,6 @@ export default function ImageSearch() {
           onSave={handleDialogOnSave}
         />
       </Dialog>
-
-
     </div>
   )
 }
