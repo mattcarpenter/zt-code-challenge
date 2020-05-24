@@ -2,13 +2,36 @@ import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import {v4 as uuidv4} from 'uuid';
 
 export const initialState = {
+  /**
+   * List of categories. Persisted to localStorage by the redux-localStorage enhancer
+   */
   categories: [],
+  /**
+   * Map of the user's favorites. Persisted to localStorage by the redux-localStorage enhancer
+   */
   favorites: {}
 };
 
 export const saveToFavorites = createAsyncThunk(
   'favorites/saveToFavorites',
-  async ({image, categories, newCategoryName, newCategoryDescription}) => {
+  async ({
+           /**
+            * Image details from API
+            */
+           image,
+           /**
+            * List of category names to assign this image to
+            */
+           categories,
+           /**
+            * Creates a new category name if provided
+            */
+           newCategoryName,
+           /**
+            * Description for new category
+            */
+           newCategoryDescription
+  }) => {
     // Typically, an action such as assigning images to a category or creating a new category would do so by
     // making a network request to an api server. Since this project uses a redux store plus localStorage to persist
     // categories and favorites, this async thunk has been created so that it would be easy to swap out for a REST
