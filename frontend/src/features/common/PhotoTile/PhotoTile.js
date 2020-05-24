@@ -82,7 +82,7 @@ const PhotoTile = ({ thumbnailURL, profileImageURL, profileUsername, originalWid
         height={scaledHeight} />
       <div className={classes.cover}>
         <div className={classes.meta}>
-          <a href={profileURL} target="_BLANK" className={classes.profileLink}>
+          <a href={profileURL} target="_BLANK" className={classes.profileLink} rel="noopener noreferrer">
             <img src={profileImageURL} className={classes.profileImage} />
             { profileUsername }
           </a>

@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import {favoritesSlice} from '../favorites/favoritesSlice';
 
 export const initialState = {
   images: [],
@@ -37,8 +38,7 @@ export const loadMoreImages = createAsyncThunk(
 export const imageSearchSlice = createSlice({
   name: 'imageSearch',
   initialState,
-  reducers: {
-  },
+  reducers: {},
   extraReducers: {
     [searchImages.fulfilled]: (state, action) => {
       state.totalPages = action.payload.total_pages;
@@ -55,6 +55,5 @@ export const imageSearchSlice = createSlice({
 });
 
 export const selectImages = state => state.imageSearch.images;
-export const selectPage = state => state.imageSearch.page;
 
 export default imageSearchSlice.reducer;
