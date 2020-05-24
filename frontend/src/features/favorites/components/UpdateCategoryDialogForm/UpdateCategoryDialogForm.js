@@ -29,15 +29,16 @@ const UpdateCategoryDialogForm = ({
   const [ errorText, setErrorText ] = useState(null);
 
   const handleSaveClicked = () => {
+    // perform basic form validation before notifying the parent that an update should occur
     if (newCategoryName.trim() === '') {
       setErrorText('Please enter a category name');
       return;
     }
-
     onSave(newCategoryName, newCategoryDescription);
   };
 
   const handleCategoryNameTextFieldChange = (e) => {
+    // clear error state
     setNewCategoryName(e.target.value);
     setErrorText(null);
   };

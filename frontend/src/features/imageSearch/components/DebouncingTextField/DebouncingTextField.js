@@ -62,7 +62,7 @@ DebouncingTextField.propTypes = {
 };
 
 DebouncingTextField.defaultProps = {
-  debounceTime: 250,
+  debounceTime: 400,
   onChange: () => {},
   onFocus: () => {}
 };

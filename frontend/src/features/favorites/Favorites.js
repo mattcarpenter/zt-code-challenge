@@ -29,6 +29,8 @@ const Favorites = ({
   const categories = bucketFavorites(useSelector(selectCategories), favorites);
 
   function handleUpdateCategory(id, name, description) {
+    // a category component indicated that the user wishes to update the name and/or description.
+    // dispatch an updateCategory action to persist the changes.
     dispatch(updateCategory({ id, name, description }));
   }
 

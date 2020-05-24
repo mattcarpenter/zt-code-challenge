@@ -39,11 +39,13 @@ const ImageSearch = ({
   const classes = useStyles();
 
   const handleDialogOnSave = (categories) => {
+    // add to favorites dialog 'save' button clicked
     setAddToFavoritesDialogOpen(false);
     dispatch(saveToFavorites({ ...categories, image: imageToAddToFavorites }));
   };
 
   const handlePhotoOnFavorite = (image) => {
+    // add to favorites button clicked on a photo
     setImageToAddToFavorites(image);
     setAddToFavoritesDialogOpen(true);
   };
