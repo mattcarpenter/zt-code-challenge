@@ -1,17 +1,11 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import { withWidth, isWidthDown, makeStyles } from '@material-ui/core';
+import { withWidth, isWidthDown } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ImageSearch from './features/imageSearch/ImageSearch';
 import Favorites from './features/favorites/Favorites';
 import './App.css';
 import NavigationBar from './features/core/NavigationBar/NavigationBar';
-
-const useStyles = makeStyles({
-  container: {
-    minHeight: '100vh'
-  }
-});
 
 function App({width}) {
   const isSmallScreen = isWidthDown('sm', width);

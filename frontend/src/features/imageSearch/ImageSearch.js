@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { searchImages, selectImages, loadMoreImages } from './imageSearchSlice';
+import { searchImages, selectImages, loadMoreImages, selectLoading, selectQuery } from './imageSearchSlice';
 import { selectCategories, saveToFavorites } from '../favorites/favoritesSlice';
 import LazyMasonry from '../core/LazyMasonry/LazyMasonry';
 import DebouncingInputBox from './components/DebouncingTextField/DebouncingTextField';
@@ -25,8 +25,10 @@ const ImageSearch = ({cols}) => {
   const [ addToFavoritesDialogOpen, setAddToFavoritesDialogOpen ] = useState(false);
   const [ imageToAddToFavorites, setImageToAddToFavorites ] = useState();
 
-  const images = useSelector(selectImages);
   const categories = useSelector(selectCategories);
+  const images = useSelector(selectImages);
+  const loading = useSelector(selectLoading);
+  const query = useSelector(selectQuery);
   const dispatch = useDispatch();
   const classes = useStyles();
 
@@ -55,9 +57,10 @@ const ImageSearch = ({cols}) => {
           placeholder="Start typing to begin a search..."
           onChange={handleSearch}
           className={classes.input}
+          value={query}
         />
       </div>
-      <LazyMasonry loadMoreItems={loadMoreItems} cols={cols}>
+      <LazyMasonry loadMoreItems={loadMoreItems} cols={cols} loading={loading}>
         {images.map(image => (
           <PhotoTile
             key={image.id}

@@ -13,8 +13,13 @@ const useStyles = makeStyles({
   }
 });
 
-const LazyMasonry = ({children, cols, loadMoreItems}) => {
+const hideLoaderStyle = {
+  display: 'none'
+};
+
+const LazyMasonry = ({children, cols, loadMoreItems, loading}) => {
   const classes = useStyles();
+
   return (
     <div>
       <Masonry
@@ -24,7 +29,7 @@ const LazyMasonry = ({children, cols, loadMoreItems}) => {
         >
         {children}
       </Masonry>
-      <InfiniteLoader onVisited={loadMoreItems} loaderStyle={{ display: 'none' }}/>
+      <InfiniteLoader onVisited={loadMoreItems} loaderStyle={!loading ? hideLoaderStyle : null} />
     </div>
   );
 };
@@ -35,12 +40,14 @@ LazyMasonry.propTypes = {
     PropTypes.node
   ]),
   cols: PropTypes.number,
-  loadMoreItems: PropTypes.func
+  loadMoreItems: PropTypes.func,
+  loading: PropTypes.bool
 };
 
 LazyMasonry.defaultProps = {
   cols: 2,
-  loadMoreItems: () => {}
+  loadMoreItems: () => {},
+  loading: false
 };
 
 export default LazyMasonry;
