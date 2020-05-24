@@ -2,7 +2,7 @@
 
 The **'imageSearch'** feature manages and promotes the image search view... a UI for querying this application's image search API and presenting an infinite scrolling grid of images.
 
-![imageSearch Component](docs/screenshot.png | width=200)
+![imageSearch Component](docs/screenshot.png)
 
 ### Feature Dependencies
 
