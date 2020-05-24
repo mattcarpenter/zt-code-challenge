@@ -38,6 +38,7 @@ exports[`PhotoTile component properly renders 1`] = `
         thumbnailURL="abc"
       >
         <div
+          className="makeStyles-root-1"
           style={
             Object {
               "height": 150,
@@ -45,10 +46,187 @@ exports[`PhotoTile component properly renders 1`] = `
           }
         >
           <img
+            className="makeStyles-image-2"
             height={150}
             src="abc"
             width={200}
           />
+          <div
+            className="makeStyles-cover-8"
+          >
+            <div
+              className="makeStyles-meta-3"
+            >
+              <a
+                className="makeStyles-profileLink-6"
+                rel="noopener noreferrer"
+                target="_BLANK"
+              >
+                <img
+                  className="makeStyles-profileImage-5"
+                />
+              </a>
+            </div>
+            <div
+              className="makeStyles-actions-4"
+            >
+              <WithStyles(ForwardRef(Button))
+                aria-label="Download Image"
+                className="makeStyles-button-7"
+                color="default"
+                variant="contained"
+              >
+                <ForwardRef(Button)
+                  aria-label="Download Image"
+                  className="makeStyles-button-7"
+                  classes={
+                    Object {
+                      "colorInherit": "MuiButton-colorInherit",
+                      "contained": "MuiButton-contained",
+                      "containedPrimary": "MuiButton-containedPrimary",
+                      "containedSecondary": "MuiButton-containedSecondary",
+                      "containedSizeLarge": "MuiButton-containedSizeLarge",
+                      "containedSizeSmall": "MuiButton-containedSizeSmall",
+                      "disableElevation": "MuiButton-disableElevation",
+                      "disabled": "Mui-disabled",
+                      "endIcon": "MuiButton-endIcon",
+                      "focusVisible": "Mui-focusVisible",
+                      "fullWidth": "MuiButton-fullWidth",
+                      "iconSizeLarge": "MuiButton-iconSizeLarge",
+                      "iconSizeMedium": "MuiButton-iconSizeMedium",
+                      "iconSizeSmall": "MuiButton-iconSizeSmall",
+                      "label": "MuiButton-label",
+                      "outlined": "MuiButton-outlined",
+                      "outlinedPrimary": "MuiButton-outlinedPrimary",
+                      "outlinedSecondary": "MuiButton-outlinedSecondary",
+                      "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+                      "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+                      "root": "MuiButton-root",
+                      "sizeLarge": "MuiButton-sizeLarge",
+                      "sizeSmall": "MuiButton-sizeSmall",
+                      "startIcon": "MuiButton-startIcon",
+                      "text": "MuiButton-text",
+                      "textPrimary": "MuiButton-textPrimary",
+                      "textSecondary": "MuiButton-textSecondary",
+                      "textSizeLarge": "MuiButton-textSizeLarge",
+                      "textSizeSmall": "MuiButton-textSizeSmall",
+                    }
+                  }
+                  color="default"
+                  variant="contained"
+                >
+                  <WithStyles(ForwardRef(ButtonBase))
+                    aria-label="Download Image"
+                    className="MuiButton-root MuiButton-contained makeStyles-button-7"
+                    component="button"
+                    disabled={false}
+                    focusRipple={true}
+                    focusVisibleClassName="Mui-focusVisible"
+                    type="button"
+                  >
+                    <ForwardRef(ButtonBase)
+                      aria-label="Download Image"
+                      className="MuiButton-root MuiButton-contained makeStyles-button-7"
+                      classes={
+                        Object {
+                          "disabled": "Mui-disabled",
+                          "focusVisible": "Mui-focusVisible",
+                          "root": "MuiButtonBase-root",
+                        }
+                      }
+                      component="button"
+                      disabled={false}
+                      focusRipple={true}
+                      focusVisibleClassName="Mui-focusVisible"
+                      type="button"
+                    >
+                      <button
+                        aria-label="Download Image"
+                        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-7"
+                        disabled={false}
+                        onBlur={[Function]}
+                        onDragLeave={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <span
+                          className="MuiButton-label"
+                        >
+                          <ForwardRef>
+                            <WithStyles(ForwardRef(SvgIcon))>
+                              <ForwardRef(SvgIcon)
+                                classes={
+                                  Object {
+                                    "colorAction": "MuiSvgIcon-colorAction",
+                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                    "colorError": "MuiSvgIcon-colorError",
+                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                    "root": "MuiSvgIcon-root",
+                                  }
+                                }
+                              >
+                                <svg
+                                  aria-hidden={true}
+                                  className="MuiSvgIcon-root"
+                                  focusable="false"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"
+                                  />
+                                </svg>
+                              </ForwardRef(SvgIcon)>
+                            </WithStyles(ForwardRef(SvgIcon))>
+                          </ForwardRef>
+                        </span>
+                        <WithStyles(memo)
+                          center={false}
+                        >
+                          <ForwardRef(TouchRipple)
+                            center={false}
+                            classes={
+                              Object {
+                                "child": "MuiTouchRipple-child",
+                                "childLeaving": "MuiTouchRipple-childLeaving",
+                                "childPulsate": "MuiTouchRipple-childPulsate",
+                                "ripple": "MuiTouchRipple-ripple",
+                                "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                "root": "MuiTouchRipple-root",
+                              }
+                            }
+                          >
+                            <span
+                              className="MuiTouchRipple-root"
+                            >
+                              <TransitionGroup
+                                childFactory={[Function]}
+                                component={null}
+                                exit={true}
+                              />
+                            </span>
+                          </ForwardRef(TouchRipple)>
+                        </WithStyles(memo)>
+                      </button>
+                    </ForwardRef(ButtonBase)>
+                  </WithStyles(ForwardRef(ButtonBase))>
+                </ForwardRef(Button)>
+              </WithStyles(ForwardRef(Button))>
+            </div>
+          </div>
         </div>
       </PhotoTile>
     </SizeMeReferenceWrapper>

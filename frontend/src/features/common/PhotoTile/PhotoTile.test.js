@@ -30,6 +30,7 @@ describe('PhotoTile', () => {
           onFavorite={onFavorite}
           thumbnailURL="abc"
           id="def"
+          canFavorite={true}
         />
       );
       wrapper.find('button').find({'aria-label':'Add to Favorites'}).simulate('click');
@@ -43,13 +44,14 @@ describe('PhotoTile', () => {
           size={{width: 200}}
           originalWidth={2000}
           originalHeight={1500}
-          onFavorite={onDownload}
+          onDownload={onDownload}
           thumbnailURL="abc"
           id="def"
+          canFavorite={true}
         />
       );
       wrapper.find('button').find({'aria-label':'Download Image'}).simulate('click');
-      expect(onFavorite.mock.calls.length).toBe(1);
+      expect(onDownload.mock.calls.length).toBe(1);
     });
 
   });
