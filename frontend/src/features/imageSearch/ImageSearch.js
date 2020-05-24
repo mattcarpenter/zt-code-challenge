@@ -52,7 +52,11 @@ const ImageSearch = ({cols}) => {
           className={classes.input}
         />
       </div>
-      <LazyMasonry loadMoreItems={() => dispatch(loadMoreImages({ perPage: 50 }))} cols={cols} loading={loading}>
+      <LazyMasonry
+        loadMoreItems={() => dispatch(loadMoreImages({ perPage: 50 }))}
+        cols={cols}
+        loading={loading}
+      >
         {images.map(image => (
           <PhotoTile
             key={image.id}
