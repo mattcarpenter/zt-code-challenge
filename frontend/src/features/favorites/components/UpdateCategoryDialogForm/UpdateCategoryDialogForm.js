@@ -37,7 +37,7 @@ const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
           type="text"
           helperText={errorText}
           error={errorText !== null}
-          maxLenth={64}
+          maxLength={64}
           fullWidth
           onChange={handleCategoryNameTextFieldChange}
         />
