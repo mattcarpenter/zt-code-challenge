@@ -4,4 +4,4 @@ The **'favorites'** feature manages and promotes the favorites view... a groupin
 
 Action creators exported by this component's redux slice may be used elsewhere in the application to create lists and add images to lists.
 
-![favorites Component](docs/screenshot.png | width=200)
+![favorites Component](docs/screenshot.png)
