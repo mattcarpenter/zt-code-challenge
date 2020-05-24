@@ -5,7 +5,12 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 
-const NavigationBar = ({navIndex}) => {
+const NavigationBar = ({
+ /**
+  * Currently active tab index
+  */
+  navIndex
+}) => {
   const history = useHistory();
 
   return (

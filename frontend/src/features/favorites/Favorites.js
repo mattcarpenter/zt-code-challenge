@@ -17,7 +17,12 @@ const useStyles = makeStyles({
   }
 });
 
-const Favorites = ({cols}) => {
+const Favorites = ({
+  /**
+  * Number of columns to arrange photo tiles in to
+  */
+  cols
+}) => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const favorites =  useSelector(selectFavorites);

@@ -97,6 +97,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
             id="list-name"
             label="List Name"
             margin="dense"
+            maxLength={64}
             onChange={[Function]}
             type="text"
             value="foo"
@@ -113,6 +114,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
               id="list-name"
               label="List Name"
               margin="dense"
+              maxLength={64}
               onChange={[Function]}
               type="text"
               value="foo"
@@ -124,6 +126,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                 error={false}
                 fullWidth={true}
                 margin="dense"
+                maxLength={64}
                 required={false}
                 variant="standard"
               >
@@ -142,11 +145,13 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                   error={false}
                   fullWidth={true}
                   margin="dense"
+                  maxLength={64}
                   required={false}
                   variant="standard"
                 >
                   <div
                     className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                    maxLength={64}
                   >
                     <WithStyles(ForwardRef(InputLabel))
                       htmlFor="list-name"
@@ -346,6 +351,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
             id="list-description"
             label="List Description"
             margin="dense"
+            maxLength={256}
             onChange={[Function]}
             type="text"
             value="bar"
@@ -360,6 +366,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
               id="list-description"
               label="List Description"
               margin="dense"
+              maxLength={256}
               onChange={[Function]}
               type="text"
               value="bar"
@@ -371,6 +378,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                 error={false}
                 fullWidth={true}
                 margin="dense"
+                maxLength={256}
                 required={false}
                 variant="standard"
               >
@@ -389,11 +397,13 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                   error={false}
                   fullWidth={true}
                   margin="dense"
+                  maxLength={256}
                   required={false}
                   variant="standard"
                 >
                   <div
                     className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                    maxLength={256}
                   >
                     <WithStyles(ForwardRef(InputLabel))
                       htmlFor="list-description"

@@ -6,7 +6,24 @@ import TextField from '@material-ui/core/TextField';
 import PropTypes from 'prop-types';
 import React, {useState} from 'react';
 
-const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
+const UpdateCategoryDialogForm = ({
+  /**
+   * Callback function invoked when the cancel button is clicked
+   */
+  onClose,
+  /**
+   * Category name to be edited
+   */
+  name,
+  /**
+   * Category description to be edited
+   */
+  description,
+  /**
+   * Callback function invoked when the save button is clicked
+   */
+  onSave
+}) => {
   const [ newCategoryName, setNewCategoryName ] = useState(name);
   const [ newCategoryDescription, setNewCategoryDescription ] = useState(description);
   const [ errorText, setErrorText ] = useState(null);

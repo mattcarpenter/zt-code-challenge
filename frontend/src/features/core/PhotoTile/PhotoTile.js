@@ -73,8 +73,52 @@ const useStyles = makeStyles({
   }
 });
 
-const PhotoTile = ({ id, thumbnailURL, profileImageURL, profileUserName, originalWidth,
-                     originalHeight, canFavorite, size, profileURL, onFavorite, downloadURL }) => {
+const PhotoTile = ({
+   /**
+    * Unique identifier
+    */
+   id,
+   /**
+    * Photo thumbnail URL
+    */
+   thumbnailURL,
+   /**
+    * Photo download URL
+    */
+   downloadURL,
+   /**
+    * Profile image URL
+    */
+   profileImageURL,
+   /**
+    * Photo owner profile URL
+    */
+   profileURL,
+   /**
+    * Photo owner name
+    */
+   profileUserName,
+   /**
+    * Photo's original width
+    */
+   originalWidth,
+   /**
+    * Photo's original height
+    */
+   originalHeight,
+   /**
+    * Indicates whether or not a favorite button should render in the actions block
+    */
+   canFavorite,
+   /**
+    * Component dimensions injected by the WithSize HOC
+    */
+   size,
+   /**
+    * Callback function invoked when the favorite button is clicked
+    */
+   onFavorite
+}) => {
   const scaledHeight = calculateScaledHeight(originalWidth, originalHeight, size.width);
   const classes = useStyles();
 

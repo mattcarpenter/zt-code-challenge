@@ -10,7 +10,20 @@ import TextField from '@material-ui/core/TextField';
 import PropTypes from 'prop-types';
 import React, {useState} from 'react';
 
-const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
+const AddToFavoritesDialogForm = ({
+  /**
+   * Callback function invoked when the cancel button is clicked
+   */
+  onClose,
+  /**
+   * List of category objects used for rendering category checkboxes
+   */
+  categories,
+  /**
+   * Callback function invoked when the save button is clicked
+   */
+  onSave
+}) => {
   const [ selectedCategoryIds, setSelectedCategoryIds ]  = useState({});
   const [ newCategoryName, setNewCategoryName ] = useState('');
   const [ newCategoryDescription, setNewCategoryDescription ] = useState('');

@@ -17,7 +17,26 @@ const hideLoaderStyle = {
   display: 'none'
 };
 
-const LazyMasonry = ({children, cols, loadMoreItems, loading}) => {
+const LazyMasonry = ({
+ /**
+  * List of children components
+  */
+ children,
+ /**
+  * Number of columns to place children into
+  */
+ cols,
+ /**
+  * Callback function invoked when the bottom of the masonry becomes visible. The parent component
+  * may use this as a signal to load more components and add them to the bottom of the masonry.
+  */
+ loadMoreItems,
+ /**
+  * Indicates whether or not the parent component is loading more items to add to the masonry.
+  * This component will render a spinner at the bottom of the masonry when `loadMoreItems` is true.
+  */
+ loading
+}) => {
   const classes = useStyles();
 
   return (

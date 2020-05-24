@@ -895,6 +895,7 @@ exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
             id="new-list-name"
             label="New List Name"
             margin="dense"
+            maxLength={64}
             onChange={[Function]}
             type="text"
           >
@@ -908,6 +909,7 @@ exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
               id="new-list-name"
               label="New List Name"
               margin="dense"
+              maxLength={64}
               onChange={[Function]}
               type="text"
             >
@@ -918,6 +920,7 @@ exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
                 error={false}
                 fullWidth={true}
                 margin="dense"
+                maxLength={64}
                 required={false}
                 variant="standard"
               >
@@ -936,11 +939,13 @@ exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
                   error={false}
                   fullWidth={true}
                   margin="dense"
+                  maxLength={64}
                   required={false}
                   variant="standard"
                 >
                   <div
                     className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                    maxLength={64}
                   >
                     <WithStyles(ForwardRef(InputLabel))
                       htmlFor="new-list-name"
@@ -1135,6 +1140,7 @@ exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
             id="new-list-description"
             label="List Description"
             margin="dense"
+            maxLength={256}
             onChange={[Function]}
             type="text"
           >
@@ -1148,6 +1154,7 @@ exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
               id="new-list-description"
               label="List Description"
               margin="dense"
+              maxLength={256}
               onChange={[Function]}
               type="text"
             >
@@ -1158,6 +1165,7 @@ exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
                 error={false}
                 fullWidth={true}
                 margin="dense"
+                maxLength={256}
                 required={false}
                 variant="standard"
               >
@@ -1176,11 +1184,13 @@ exports[`AddToFavoritesDialogForm renders correctly categories exist 1`] = `
                   error={false}
                   fullWidth={true}
                   margin="dense"
+                  maxLength={256}
                   required={false}
                   variant="standard"
                 >
                   <div
                     className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                    maxLength={256}
                   >
                     <WithStyles(ForwardRef(InputLabel))
                       htmlFor="new-list-description"
@@ -1793,6 +1803,7 @@ exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
             id="new-list-name"
             label="New List Name"
             margin="dense"
+            maxLength={64}
             onChange={[Function]}
             type="text"
           >
@@ -1806,6 +1817,7 @@ exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
               id="new-list-name"
               label="New List Name"
               margin="dense"
+              maxLength={64}
               onChange={[Function]}
               type="text"
             >
@@ -1816,6 +1828,7 @@ exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
                 error={false}
                 fullWidth={true}
                 margin="dense"
+                maxLength={64}
                 required={false}
                 variant="standard"
               >
@@ -1834,11 +1847,13 @@ exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
                   error={false}
                   fullWidth={true}
                   margin="dense"
+                  maxLength={64}
                   required={false}
                   variant="standard"
                 >
                   <div
                     className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                    maxLength={64}
                   >
                     <WithStyles(ForwardRef(InputLabel))
                       htmlFor="new-list-name"
@@ -2033,6 +2048,7 @@ exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
             id="new-list-description"
             label="List Description"
             margin="dense"
+            maxLength={256}
             onChange={[Function]}
             type="text"
           >
@@ -2046,6 +2062,7 @@ exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
               id="new-list-description"
               label="List Description"
               margin="dense"
+              maxLength={256}
               onChange={[Function]}
               type="text"
             >
@@ -2056,6 +2073,7 @@ exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
                 error={false}
                 fullWidth={true}
                 margin="dense"
+                maxLength={256}
                 required={false}
                 variant="standard"
               >
@@ -2074,11 +2092,13 @@ exports[`AddToFavoritesDialogForm renders correctly when no categories 1`] = `
                   error={false}
                   fullWidth={true}
                   margin="dense"
+                  maxLength={256}
                   required={false}
                   variant="standard"
                 >
                   <div
                     className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+                    maxLength={256}
                   >
                     <WithStyles(ForwardRef(InputLabel))
                       htmlFor="new-list-description"

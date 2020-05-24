@@ -34,7 +34,29 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const Category = ({name, description, onUpdateCategory, favorites, cols}) => {
+const Category = ({
+  /**
+   * Category name
+   */
+  name,
+  /**
+   * Category description
+   */
+  description,
+  /**
+   * Callback function invoked when the category details have been updated (i.e. via the edit dialog.)
+   * The parent component will be responsible for persisting the updated details.
+   */
+  onUpdateCategory,
+  /**
+   * Object containing favorited images; keyed by image id
+   */
+  favorites,
+  /**
+   * Number of columns to arrange photo tiles in to
+   */
+  cols
+}) => {
   const [ editDialogOpen, setEditDialogOpen ] = useState(false);
   const classes = useStyles();
 
