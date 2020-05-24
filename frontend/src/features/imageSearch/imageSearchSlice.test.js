@@ -58,12 +58,25 @@ describe('imageSearch slice', () => {
   it('properly appends images after successfully loading more images', () => {
     // simulate search
     const mockAxiosResponse = createMockImageSearchResponse(100, 2, 50);
-    const state2 = reducer(initialState, searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens' }));
+    const state2 = reducer({ ...initialState, loading: true },
+      searchImages.fulfilled({ ...mockAxiosResponse.response, query: 'kittens' }));
     expect(state2.images.length).toBe(50);
 
     // simulate load more images
-    const state3 = reducer(state2, loadMoreImages.fulfilled({ ...mockAxiosResponse.response, page: 2 }));
+    const state3 = reducer({ ...state2, loading: true },
+      loadMoreImages.fulfilled({ ...mockAxiosResponse.response, page: 2 }));
     expect(state3.images.length).toBe(100);
+    expect(state3.loading).toBe(false);
+  });
+
+  it('sets `loading` false after a search fails', () => {
+    const state2 = reducer({ ...initialState, loading: true }, searchImages.rejected({}));
+    expect(state2.loading).toBe(false);
+  });
+
+  it('sets `loading` false after a loadMoreImages fails', () => {
+    const state2 = reducer({ ...initialState, loading: true }, loadMoreImages.rejected({}));
+    expect(state2.loading).toBe(false);
   });
 
 });
