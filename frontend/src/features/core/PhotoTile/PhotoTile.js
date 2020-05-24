@@ -3,15 +3,19 @@ import PropTypes from 'prop-types';
 import { withSize } from 'react-sizeme';
 import { makeStyles } from '@material-ui/core/styles';
 import SaveAltIcon from '@material-ui/icons/SaveAlt';
+import AddIcon from '@material-ui/icons/Add';
 import Button from '@material-ui/core/Button';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const useStyles = makeStyles({
   root: {
     position: 'relative',
     '&:hover > div': {
       display: 'block'
-    }
+    },
+    margin: '12px 6px',
+    borderRadius: 3,
+    overflow: 'hidden',
+    backgroundColor: 'rgb(100,100,100)'
   },
   image: {
     position: 'absolute',
@@ -60,7 +64,7 @@ const useStyles = makeStyles({
     }
   },
   cover: {
-    //display: 'none',
+    display: 'none',
     position: 'absolute',
     top: 0,
     bottom: 0,
@@ -103,7 +107,7 @@ const PhotoTile = ({ id, thumbnailURL, profileImageURL, profileUserName, origina
               variant="contained"
               className={classes.button}
               color="default">
-              <FavoriteIcon />
+              <AddIcon />
             </Button>
           )}
           <Button

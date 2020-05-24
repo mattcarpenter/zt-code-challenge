@@ -1,49 +1,6 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 import {v4 as uuidv4} from 'uuid';
 
-const mockInitialState = {
-  categories: [
-    {
-      name: 'black cats',
-      description: 'mostly just black cats',
-      id: '2c19bde1-a9c4-4b57-b4f6-601157d71483'
-    },
-    {
-      name: 'Kittens Only',
-      description: 'Only Kittens!!!!',
-      id: 'e9e5e132-1d65-4ec0-b1a9-a8596ebe5e0a'
-    }
-  ],
-  favorites: {
-    N0pESvB7pPo: {
-      id: 'N0pESvB7pPo',
-      thumbnailURL: 'https://images.unsplash.com/photo-1567093614297-8ade6cf5d8f0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjEzNjU0OH0',
-      downloadURL: 'https://unsplash.com/photos/N0pESvB7pPo/download',
-      profileImageURL: 'https://images.unsplash.com/profile-1553622588102-c3316bd766e6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32',
-      profileURL: 'https://unsplash.com/@nihaldemirci',
-      profileUserName: 'Nihal Demirci',
-      originalWidth: 6000,
-      originalHeight: 4000,
-      categories: [
-        '2c19bde1-a9c4-4b57-b4f6-601157d71483'
-      ]
-    },
-    '1l2waV8glIQ': {
-      id: '1l2waV8glIQ',
-      thumbnailURL: 'https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjEzNjU0OH0',
-      downloadURL: 'https://unsplash.com/photos/1l2waV8glIQ/download',
-      profileImageURL: 'https://images.unsplash.com/profile-1538941834664-a6d8eb80866b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32',
-      profileURL: 'https://unsplash.com/@calypso999',
-      profileUserName: 'Raul Varzar',
-      originalWidth: 3200,
-      originalHeight: 2361,
-      categories: [
-        'e9e5e132-1d65-4ec0-b1a9-a8596ebe5e0a'
-      ]
-    }
-  }
-};
-
 export const initialState = {
   categories: [],
   favorites: {}
@@ -72,7 +29,7 @@ export const saveToFavorites = createAsyncThunk(
 
 export const favoritesSlice = createSlice({
   name: 'favorites',
-  initialState: mockInitialState,
+  initialState: initialState,
   reducers: {
     updateCategory: (state, action) => {
       const { id, name, description } = action.payload;

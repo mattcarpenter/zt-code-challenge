@@ -54,7 +54,6 @@ const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
           Add this photo to a new list by entering a list name and description.
         </DialogContentText>
         <TextField
-          autoFocus
           margin="dense"
           id="new-list-name"
           label="New List Name"
@@ -63,7 +62,6 @@ const AddToFavoritesDialogForm = ({onClose, categories, onSave}) => {
           onChange={(e) => setNewCategoryName(e.target.value)}
         />
         <TextField
-          autoFocus
           margin="dense"
           id="new-list-description"
           label="List Description"

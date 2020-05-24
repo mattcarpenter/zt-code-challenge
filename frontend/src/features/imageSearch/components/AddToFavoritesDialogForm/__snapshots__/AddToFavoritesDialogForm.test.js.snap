@@ -891,7 +891,6 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
             </ForwardRef(DialogContentText)>
           </WithStyles(ForwardRef(DialogContentText))>
           <WithStyles(ForwardRef(TextField))
-            autoFocus={true}
             fullWidth={true}
             id="new-list-name"
             label="New List Name"
@@ -900,7 +899,6 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
             type="text"
           >
             <ForwardRef(TextField)
-              autoFocus={true}
               classes={
                 Object {
                   "root": "MuiTextField-root",
@@ -1014,7 +1012,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                       </ForwardRef(InputLabel)>
                     </WithStyles(ForwardRef(InputLabel))>
                     <WithStyles(ForwardRef(Input))
-                      autoFocus={true}
+                      autoFocus={false}
                       fullWidth={true}
                       id="new-list-name"
                       multiline={false}
@@ -1022,7 +1020,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                       type="text"
                     >
                       <ForwardRef(Input)
-                        autoFocus={true}
+                        autoFocus={false}
                         classes={
                           Object {
                             "colorSecondary": "MuiInput-colorSecondary",
@@ -1048,7 +1046,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                         type="text"
                       >
                         <WithStyles(ForwardRef(InputBase))
-                          autoFocus={true}
+                          autoFocus={false}
                           classes={
                             Object {
                               "colorSecondary": "MuiInput-colorSecondary",
@@ -1075,7 +1073,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                           type="text"
                         >
                           <ForwardRef(InputBase)
-                            autoFocus={true}
+                            autoFocus={false}
                             classes={
                               Object {
                                 "adornedEnd": "MuiInputBase-adornedEnd",
@@ -1111,7 +1109,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                             >
                               <input
                                 aria-invalid={false}
-                                autoFocus={true}
+                                autoFocus={false}
                                 className="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
                                 disabled={false}
                                 id="new-list-name"
@@ -1133,7 +1131,6 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
             </ForwardRef(TextField)>
           </WithStyles(ForwardRef(TextField))>
           <WithStyles(ForwardRef(TextField))
-            autoFocus={true}
             fullWidth={true}
             id="new-list-description"
             label="List Description"
@@ -1142,7 +1139,6 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
             type="text"
           >
             <ForwardRef(TextField)
-              autoFocus={true}
               classes={
                 Object {
                   "root": "MuiTextField-root",
@@ -1256,7 +1252,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                       </ForwardRef(InputLabel)>
                     </WithStyles(ForwardRef(InputLabel))>
                     <WithStyles(ForwardRef(Input))
-                      autoFocus={true}
+                      autoFocus={false}
                       fullWidth={true}
                       id="new-list-description"
                       multiline={false}
@@ -1264,7 +1260,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                       type="text"
                     >
                       <ForwardRef(Input)
-                        autoFocus={true}
+                        autoFocus={false}
                         classes={
                           Object {
                             "colorSecondary": "MuiInput-colorSecondary",
@@ -1290,7 +1286,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                         type="text"
                       >
                         <WithStyles(ForwardRef(InputBase))
-                          autoFocus={true}
+                          autoFocus={false}
                           classes={
                             Object {
                               "colorSecondary": "MuiInput-colorSecondary",
@@ -1317,7 +1313,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                           type="text"
                         >
                           <ForwardRef(InputBase)
-                            autoFocus={true}
+                            autoFocus={false}
                             classes={
                               Object {
                                 "adornedEnd": "MuiInputBase-adornedEnd",
@@ -1353,7 +1349,7 @@ exports[`AddToFavoritesDialogForm renders correctly 1`] = `
                             >
                               <input
                                 aria-invalid={false}
-                                autoFocus={true}
+                                autoFocus={false}
                                 className="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
                                 disabled={false}
                                 id="new-list-description"

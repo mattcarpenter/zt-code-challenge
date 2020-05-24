@@ -4,6 +4,7 @@ exports[`debouncingTextBox renders properly 1`] = `
 <WithStyles(ForwardRef(TextField))
   fullWidth={true}
   onChange={[Function]}
+  onFocus={[Function]}
   placeholder="Placeholder text"
   type="text"
   variant="outlined"

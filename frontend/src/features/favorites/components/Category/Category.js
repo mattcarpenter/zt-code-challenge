@@ -5,18 +5,19 @@ import Button from '@material-ui/core/Button';
 import EditIcon from '@material-ui/icons/Edit';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import LazyMasonry from '../../../common/LazyMasonry/LazyMasonry';
-import PhotoTile from '../../../common/PhotoTile/PhotoTile';
+import LazyMasonry from '../../../core/LazyMasonry/LazyMasonry';
+import PhotoTile from '../../../core/PhotoTile/PhotoTile';
 import Dialog from '@material-ui/core/Dialog';
 import UpdateCategoryDialogForm from '../UpdateCategoryDialogForm/UpdateCategoryDialogForm';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginBottom: 50,
-    position: 'relative'
+    marginBottom: 20,
+    position: 'relative',
+    backgroundColor: 'rgb(35, 35, 35)'
   },
   masonryContainer: {
-    padding: '0px 15px 15px 15px'
+    padding: '0px 6px 6px 6px'
   },
   categoryHeader: {
     padding: 15
@@ -62,7 +63,7 @@ const Category = ({name, description, onUpdateCategory, favorites}) => {
         </div>
       </div>
       <div className={classes.masonryContainer}>
-        <LazyMasonry>
+        <LazyMasonry cols={3}>
           {favorites.map(image => (
             <PhotoTile
               key={image.id}

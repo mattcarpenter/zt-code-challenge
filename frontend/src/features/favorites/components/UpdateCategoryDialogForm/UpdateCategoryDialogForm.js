@@ -20,7 +20,6 @@ const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
       <DialogContent dividers>
         <TextField
           value={newCategoryName}
-          autoFocus
           margin="dense"
           id="list-name"
           label="List Name"
@@ -30,7 +29,6 @@ const UpdateCategoryDialogForm = ({onClose, name, description, onSave}) => {
         />
         <TextField
           value={newCategoryDescription}
-          autoFocus
           margin="dense"
           id="list-description"
           label="List Description"

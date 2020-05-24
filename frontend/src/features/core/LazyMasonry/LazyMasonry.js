@@ -24,7 +24,7 @@ const LazyMasonry = ({children, cols, loadMoreItems}) => {
         >
         {children}
       </Masonry>
-      <InfiniteLoader onVisited={loadMoreItems}/>
+      <InfiniteLoader onVisited={loadMoreItems} loaderStyle={{ display: 'none' }}/>
     </div>
   );
 };

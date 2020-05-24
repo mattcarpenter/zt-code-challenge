@@ -91,7 +91,6 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
           className="MuiDialogContent-root MuiDialogContent-dividers"
         >
           <WithStyles(ForwardRef(TextField))
-            autoFocus={true}
             fullWidth={true}
             id="list-name"
             label="List Name"
@@ -101,7 +100,6 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
             value="foo"
           >
             <ForwardRef(TextField)
-              autoFocus={true}
               classes={
                 Object {
                   "root": "MuiTextField-root",
@@ -216,7 +214,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                       </ForwardRef(InputLabel)>
                     </WithStyles(ForwardRef(InputLabel))>
                     <WithStyles(ForwardRef(Input))
-                      autoFocus={true}
+                      autoFocus={false}
                       fullWidth={true}
                       id="list-name"
                       multiline={false}
@@ -225,7 +223,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                       value="foo"
                     >
                       <ForwardRef(Input)
-                        autoFocus={true}
+                        autoFocus={false}
                         classes={
                           Object {
                             "colorSecondary": "MuiInput-colorSecondary",
@@ -252,7 +250,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                         value="foo"
                       >
                         <WithStyles(ForwardRef(InputBase))
-                          autoFocus={true}
+                          autoFocus={false}
                           classes={
                             Object {
                               "colorSecondary": "MuiInput-colorSecondary",
@@ -280,7 +278,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                           value="foo"
                         >
                           <ForwardRef(InputBase)
-                            autoFocus={true}
+                            autoFocus={false}
                             classes={
                               Object {
                                 "adornedEnd": "MuiInputBase-adornedEnd",
@@ -317,7 +315,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                             >
                               <input
                                 aria-invalid={false}
-                                autoFocus={true}
+                                autoFocus={false}
                                 className="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
                                 disabled={false}
                                 id="list-name"
@@ -340,7 +338,6 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
             </ForwardRef(TextField)>
           </WithStyles(ForwardRef(TextField))>
           <WithStyles(ForwardRef(TextField))
-            autoFocus={true}
             fullWidth={true}
             id="list-description"
             label="List Description"
@@ -350,7 +347,6 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
             value="bar"
           >
             <ForwardRef(TextField)
-              autoFocus={true}
               classes={
                 Object {
                   "root": "MuiTextField-root",
@@ -465,7 +461,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                       </ForwardRef(InputLabel)>
                     </WithStyles(ForwardRef(InputLabel))>
                     <WithStyles(ForwardRef(Input))
-                      autoFocus={true}
+                      autoFocus={false}
                       fullWidth={true}
                       id="list-description"
                       multiline={false}
@@ -474,7 +470,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                       value="bar"
                     >
                       <ForwardRef(Input)
-                        autoFocus={true}
+                        autoFocus={false}
                         classes={
                           Object {
                             "colorSecondary": "MuiInput-colorSecondary",
@@ -501,7 +497,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                         value="bar"
                       >
                         <WithStyles(ForwardRef(InputBase))
-                          autoFocus={true}
+                          autoFocus={false}
                           classes={
                             Object {
                               "colorSecondary": "MuiInput-colorSecondary",
@@ -529,7 +525,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                           value="bar"
                         >
                           <ForwardRef(InputBase)
-                            autoFocus={true}
+                            autoFocus={false}
                             classes={
                               Object {
                                 "adornedEnd": "MuiInputBase-adornedEnd",
@@ -566,7 +562,7 @@ exports[`UpdateCategoryDialogForm should render properly 1`] = `
                             >
                               <input
                                 aria-invalid={false}
-                                autoFocus={true}
+                                autoFocus={false}
                                 className="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
                                 disabled={false}
                                 id="list-description"

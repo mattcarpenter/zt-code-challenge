@@ -2,22 +2,35 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchImages, selectImages, loadMoreImages } from './imageSearchSlice';
 import { selectCategories, saveToFavorites } from '../favorites/favoritesSlice';
-import LazyMasonry from '../common/LazyMasonry/LazyMasonry';
+import LazyMasonry from '../core/LazyMasonry/LazyMasonry';
 import DebouncingInputBox from './components/DebouncingTextField/DebouncingTextField';
-import PhotoTile from '../common/PhotoTile/PhotoTile';
+import PhotoTile from '../core/PhotoTile/PhotoTile';
 import Dialog from '@material-ui/core/Dialog';
+import { makeStyles } from '@material-ui/core/styles';
 import AddToFavoritesDialogForm from './components/AddToFavoritesDialogForm/AddToFavoritesDialogForm';
+import PropTypes from 'prop-types';
 
-export default function ImageSearch() {
+const useStyles = makeStyles({
+  root: {
+    minHeight: '100vh',
+    position: 'relative',
+    backgroundColor: 'rgb(35, 35, 35)'
+  },
+  search: {
+    padding: '20px 20px 10px 20px'
+  }
+});
+
+const ImageSearch = ({cols}) => {
   const [ addToFavoritesDialogOpen, setAddToFavoritesDialogOpen ] = useState(false);
   const [ imageToAddToFavorites, setImageToAddToFavorites ] = useState();
 
   const images = useSelector(selectImages);
   const categories = useSelector(selectCategories);
   const dispatch = useDispatch();
+  const classes = useStyles();
 
   function loadMoreItems() {
-    console.log('load more images');
     dispatch(loadMoreImages());
   }
 
@@ -36,9 +49,15 @@ export default function ImageSearch() {
   }
 
   return (
-    <div>
-      <DebouncingInputBox placeholder="Start typing to begin a search..."  onChange={handleSearch} />
-      <LazyMasonry loadMoreItems={loadMoreItems} cols={3}>
+    <div className={classes.root}>
+      <div className={classes.search}>
+        <DebouncingInputBox
+          placeholder="Start typing to begin a search..."
+          onChange={handleSearch}
+          className={classes.input}
+        />
+      </div>
+      <LazyMasonry loadMoreItems={loadMoreItems} cols={cols}>
         {images.map(image => (
           <PhotoTile
             key={image.id}
@@ -68,5 +87,11 @@ export default function ImageSearch() {
       </Dialog>
     </div>
   )
-}
+};
+
+ImageSearch.propTypes = {
+  cols: PropTypes.number
+};
+
+export default ImageSearch;
 

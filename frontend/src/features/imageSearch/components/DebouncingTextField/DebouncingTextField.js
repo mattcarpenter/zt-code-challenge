@@ -2,7 +2,7 @@ import React from 'react'
 import { TextField } from '@material-ui/core'
 import PropTypes from 'prop-types';
 
-const DebouncingTextField = ({label, value, debounceTime, onChange, placeholder}) => {
+const DebouncingTextField = ({label, value, debounceTime, onChange, placeholder, className, onFocus}) => {
 
   const handleChange = debounceEvent((value) => {
     onChange(value);
@@ -10,12 +10,14 @@ const DebouncingTextField = ({label, value, debounceTime, onChange, placeholder}
 
   return (
     <TextField
+      className={className}
       label={label}
       type="text"
       variant="outlined"
       value={value}
       onChange={handleChange}
       placeholder={placeholder}
+      onFocus={onFocus}
       fullWidth={true}
     />
   );
@@ -25,12 +27,15 @@ DebouncingTextField.propTypes = {
   label: PropTypes.string,
   onChange: PropTypes.func,
   value: PropTypes.string,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
+  className: PropTypes.string,
+  onFocus: PropTypes.func
 };
 
 DebouncingTextField.defaultProps = {
   debounceTime: 250,
-  onChange: () => {}
+  onChange: () => {},
+  onFocus: () => {}
 };
 
 export const debounceEvent = (callback, time, interval) => {
