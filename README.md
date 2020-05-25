@@ -51,7 +51,7 @@ I wanted to build the application in such a way that the next developer who need
 
 **SPA Only vs. SPA + Lightweight Backend**
 
-Although the [Unsplash API Guidelines](https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines) don't explicitly require the application's `access key` to be kept confidential, I wanted the front-end to search images through the application's own backend so that this credential is not made publicly available to anyone who wants to query images on behalf of this application. In future iterations, controls such as rate limiting and key rotation can be applied. 
+Although the [Unsplash API Guidelines](https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines) don't explicitly require the application's `access key` to be kept confidential, I wanted the front-end to search images through the application's own backend so that this credential is not made publicly available to anyone who wants to query images on behalf of this application. In future iterations, controls such as rate limiting and key rotation can be applied at the backend. 
 
 The backend can also help insulate the frontend from breaking changes to Unsplash's own API by mapping Unsplash API responses to a contract agreed upon between the frontend and backend. This mapping also reduces the amount of data returned to the frontend, as it doesn't require nearly as much information as what is returned by the Unsplash API.
 
