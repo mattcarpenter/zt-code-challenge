@@ -1,5 +1,18 @@
 # Code Challenge Discussion
 
+## Technologies Used
+
+**Frontend**
+* React
+* Redux
+* localStorage (for persisting favorites and lists)
+* Jest, Enzyme
+
+**Backend**
+* Node
+* Express
+* Jest, Supertest
+
 ## Q&A
 
 ### Q: Do you have any strong rationale for why you chose specific development technologies for this project that you would like to share with the team?

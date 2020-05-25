@@ -26,19 +26,6 @@ The image search application will be available at [http://localhost:4900](http:/
 
 See [Developer Getting Started](#developer-getting-started) for more information on running and testing the front-end and back-end components of this application.
 
-## Technologies
-
-**Frontend**
-* React
-* Redux
-* localStorage (for persisting favorites and lists)
-* Jest, Enzyme
-
-**Backend**
-* Node
-* Express
-* Jest, Supertest
-
 ## Code Challenge Discussion Topics
 
 Please see [CODE_CHALLENGE_DISCUSSION.md](/CODE_CHALLENGE_DISCUSSION.md) for todos and responses to the rational questions.
