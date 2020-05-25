@@ -60,7 +60,7 @@ The backend can also help insulate the frontend from breaking changes to Unsplas
 This application is containerized for easy deployment to cloud infrastructure. The current Dockerfile builds the front-end bundle into the backend image so that the entire application can run out of a single container.
 
 If the build and delivery pipeline were in scope for this code challenge, I would have considered omitting the front-end bundle from the backend image and deploying it to a storage bucket (S3, etc..) instead.
-
+ 
 ### Q: Do you have any strong rationale for why you made specific implementation decisions over alternatives?
 
 I used a domain-driven design approach to organize components and files within the frontend application. Rather than organizing files into directories named after their function (e.g. `components`, `actions`, `reducers`, etc...), everything is colocated within directories named after the _features_ of the application. The intent is to make it easier for the next developer who comes along to understand the structure of the application.
@@ -77,8 +77,9 @@ There's a few things I'd like to do if I had more time to work on this challenge
 * Bug fixes
   * Resizing gets a bit janky when the image list contains a lot of items. To keep the application performant, I'd like to minimize as much resizing and re-layout of the grid as possible. Fixed breakpoints helps with this.
 * Functionality
-  * Display a toast message or similar if an API call fails.
-  * Better error handling in the backend
+  * API call failure handling (show an error message)
+  * Implement proper error handling in the backend
+  * Support removing an image from a list - Wire the 'Add to List' dialog into the store and pre-check the list checkboxes.
 * Other
   * Backend readme and API docs
   * Convert components and redux slices to TypeScript
