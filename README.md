@@ -80,6 +80,7 @@ There's a few things I'd like to do if I had more time to work on this challenge
   * Display a toast message or similar if an API call fails.
   * Better error handling in the backend
 * Other
+  * Backend readme and API docs
   * Convert components and redux slices to TypeScript
   * Build a CI pipeline
   * Script infrastructure (Terraform, CloudFormation, etc...)
