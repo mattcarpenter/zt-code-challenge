@@ -9,7 +9,6 @@ describe('api', () => {
     expect(response.body.total).toBeGreaterThan(0);
     expect(response.body.total_pages).toBeGreaterThan(0);
     expect(response.body.results).toEqual(expect.any(Array));
-    expect(response.body.results[0].urls).toEqual(expect.any(Object));
     done();
   });
 

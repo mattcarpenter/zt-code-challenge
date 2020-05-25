@@ -8,7 +8,7 @@ router.get('/search', [
   check('query').exists(),
   check('page').optional().isInt({ gt: 0 }).toInt(),
   check('perPage').optional().isInt({ gt: 0 }).toInt()
-], async (req, res) => {
+], async (req, res, next) => {
 
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
