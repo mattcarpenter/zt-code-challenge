@@ -72,18 +72,20 @@ I don't think there is any one correct way to structure a frontend application, 
 There's a few things I'd like to do if I had more time to work on this challenge.
 
 * Testing
-  * The store-connected components in this application aren't as well tested as some of the 'dumb' ones. I'd like to increase unit test code coverage on these components.
-  * Write a small suite of e2e tests to verify functionality
+  * The store-connected components in this application aren't as well tested as some of the 'dumb' components. I'd like to increase unit test code coverage on these components. This testing should also assert specific functionality instead of simply relying on snapshot comparisons.
+  * Write a small suite of verifiction e2e tests
 * Bug fixes
-  * Resizing gets a bit janky when the image list contains a lot of items. To keep the application performant, I'd like to minimize as much resizing and re-layout of the grid as possible. Fixed breakpoints helps with this.
+  * Resizing gets a bit janky when the image list contains a lot of items. To keep the application performant, I'd like to minimize as much resizing and relayout of the grid as possible. Fixed breakpoints helps with this. 
+  * Query input box value goes missing when navigating to `/favorites` and back to `/`
 * Functionality
-  * API call failure handling (show an error message)
+  * Error messaging when an API call fails
   * Implement proper error handling in the backend
   * Support removing an image from a list - Wire the 'Add to List' dialog into the store and pre-check the list checkboxes.
 * Other
   * Backend readme and API docs
-  * Convert components and redux slices to TypeScript
+  * Convert components, tests, and redux slices to TypeScript
   * Build a CI pipeline
+  * Refactor navigation component and routing strategy
   * Script infrastructure (Terraform, CloudFormation, etc...)
 
 ## Developer Getting Started
