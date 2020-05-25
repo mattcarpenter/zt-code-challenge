@@ -1,9 +1,7 @@
 # Unsplash Coding Challenge
 
 - [Quickstart](#quickstart)
-- [Technologies](#technologies)
 - [Code Challenge Discussion Topics](#code-challenge-discussion-topics)
-- [Todo](#todo)
 - [Developer Getting Started](#developer-getting-started)
   * [Running without Docker](#running-without-docker)
   * [Testing](#testing)
