@@ -1,5 +1,15 @@
 # Unsplash Coding Challenge
 
+- [Quickstart](#quickstart)
+- [Technologies](#technologies)
+- [Code Challenge Discussion Topics](#code-challenge-discussion-topics)
+- [Todo](#todo)
+- [Developer Getting Started](#developer-getting-started)
+  * [Running without Docker](#running-without-docker)
+  * [Testing](#testing)
+    + [Frontend](#frontend)
+    + [Backend](#backend)
+
 ## Quickstart
 1. Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop)
 2. Clone this repository and place your Unsplash access key in a file named `.env` at the repository root.
@@ -16,20 +26,22 @@ The image search application will be available at [http://localhost:4900](http:/
 
 See [Developer Getting Started](#developer-getting-started) for more information on testing and developing on the front-end and back-end components of this application.
 
-## Code Challenge Discussion Topics
+## Technologies
 
-> Do you have any strong rationale for why you chose specific development technologies for this project that you would like to share with the team?
-
-**Frontend technologies**
+**Frontend**
 * React
 * Redux
 * localStorage (for persisting favorites and lists)
 * Jest, Enzyme
 
-**Backend technologies**
+**Backend**
 * Node
 * Express
 * Jest, Supertest
+
+## Code Challenge Discussion Topics
+
+> Do you have any strong rationale for why you chose specific development technologies for this project that you would like to share with the team?
 
 Vue.js and Angular are both suitable for an application of this nature, but I chose to build this application in React since it's a mature framework and currently [the most popular](https://www.npmtrends.com/react-vs-vue-vs-@angular/core) of the three. 
 
