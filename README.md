@@ -104,11 +104,14 @@ The following instructions assume you are running in a Unix environment. have No
     ```
 
 Backend [http://localhost:4900/api/search?query=kittens](http://localhost:4900/api/search?query=kittens)
+
 Frontend: [http://localhost:3000/](http://localhost:3000)
 
 Note: The dev server is configured to proxy requests to the backend e.g: [http://localhost:3000/api/search?query=kittens](http://localhost:3000/api/search?query=kittens
 
 ### Testing
+
+Test sources are colocated with the components and other sources under test.
 
 #### Frontend
 
