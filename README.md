@@ -24,7 +24,7 @@
     ```
 The image search application will be available at [http://localhost:4900](http://localhost:4900).
 
-See [Developer Getting Started](#developer-getting-started) for more information on testing and developing on the front-end and back-end components of this application.
+See [Developer Getting Started](#developer-getting-started) for more information on running and testing the front-end and back-end components of this application.
 
 ## Technologies
 
