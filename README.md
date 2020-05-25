@@ -109,7 +109,7 @@ Backend [http://localhost:4900/api/search?query=kittens](http://localhost:4900/a
 
 Frontend: [http://localhost:3000/](http://localhost:3000)
 
-Note: The dev server is configured to proxy requests to the backend e.g: [http://localhost:3000/api/search?query=kittens](http://localhost:3000/api/search?query=kittens
+Note: The dev server is configured to proxy requests to the backend e.g: [http://localhost:3000/api/search?query=kittens](http://localhost:3000/api/search?query=kittens)
 
 ### Testing
 
