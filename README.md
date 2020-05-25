@@ -41,13 +41,13 @@ See [Developer Getting Started](#developer-getting-started) for more information
 
 ## Code Challenge Discussion Topics
 
-#### Q: Do you have any strong rationale for why you chose specific development technologies for this project that you would like to share with the team?
+### Q: Do you have any strong rationale for why you chose specific development technologies for this project that you would like to share with the team?
 
 Vue.js and Angular are both suitable for an application of this nature, but I chose to build this application in React since it's a mature framework and currently [the most popular](https://www.npmtrends.com/react-vs-vue-vs-@angular/core) of the three. 
 
 I wanted to build the application in such a way that the next developer who needs to work on it is most likely already familiar with the structure, patterns, and tooling necessary to do so.
 
-#### Q: Do you have any strong rationale for why you made specific design decisions (software architecture design) over alternatives?
+### Q: Do you have any strong rationale for why you made specific design decisions (software architecture design) over alternatives?
 
 **SPA Only vs. SPA + Lightweight Backend**
 
@@ -61,7 +61,7 @@ This application is containerized for easy deployment to cloud infrastructure. T
 
 If the build and delivery pipeline were in scope for this code challenge, I would have considered omitting the front-end bundle from the backend image and deploying it to a storage bucket (S3, etc..) instead.
 
-#### Q: Do you have any strong rationale for why you made specific implementation decisions over alternatives?
+### Q: Do you have any strong rationale for why you made specific implementation decisions over alternatives?
 
 I used a domain-driven design approach to organize components and files within the frontend application. Rather than organizing files into directories named after their function (e.g. `components`, `actions`, `reducers`, etc...), everything is colocated within directories named after the _features_ of the application. The intent is to make it easier for the next developer who comes along to understand the structure of the application.
 
