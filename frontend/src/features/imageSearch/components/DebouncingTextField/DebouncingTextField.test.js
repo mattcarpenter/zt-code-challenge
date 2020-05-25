@@ -24,6 +24,6 @@ describe('debouncingTextBox', () => {
       expect(handleChange.mock.calls.length).toBe(1);
       expect(handleChange.mock.calls[0][0]).toBe('abc');
       done();
-    }, 300);
+    }, 450);
   });
 });
